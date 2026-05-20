@@ -14,6 +14,8 @@ import GalleryPage from './components/GalleryPage';
 import ContactSection from './components/ContactSection';
 import ServicesPage from './components/Services/ServicesPage';
 import Doctors from './components/DoctorsSection';
+import FaqSection from './components/FaqSection';
+import Appointment from './components/Appointment';
 
 function App() {
   useEffect(() => {
@@ -33,9 +35,9 @@ function App() {
           <Route path="/gallery" element={<GalleryPage />} />
           <Route path="/services" element={<ServicesPage />} />
           <Route path="/doctors" element={<Doctors />} />
-          
+          <Route path="/faq-asad-hospital" element={<FaqSection />} />
           <Route path="/contact" element={<ContactSection />} />
-
+          <Route path="/hospital-appointment" element={<Appointment />} />
 
         </Routes>
       </main>

@@ -1,32 +1,35 @@
 import React from "react";
 import FaqSection from "./FaqSection";
+import { Link } from "react-router-dom";
+import HomeGallery from "./HomeGallery";
+
 const doctorsData = [
   {
     name: "डॉ. साहुन खान",
     image: "images/team/team2.jpeg",
-    specialty: "MBBS, MS, FIAGES, FMAS",
+    specialty: "M.B.B.S, MS, FIAGES, FMAS",
     experience:
-      "जनरल एवं लेप्रोस्कोपिक सर्जन | पूर्व चिकित्सक | SMS हॉस्पिटल, जयपुर | सफदरजंग हॉस्पिटल, दिल्ली | ESIC हॉस्पिटल, दिल्ली",
+      "जनरल एवं लेप्रोस्कोपिक सर्जन पूर्व चिकित्सक SMS हॉस्पिटल, जयपुर  सफदरजंग हॉस्पिटल, दिल्ली ",
     availability: "24 Hours Available",
   },
   {
     name: "डॉ. परवीन खान",
     image: "images/team/team1.jpeg",
-    specialty: "MBBS, MS, FMAS",
+    specialty: "M.B.B.S, MS, FMAS",
     experience:
-      "स्त्री रोग विशेषज्ञ | पूर्व चिकित्सक | SMS हॉस्पिटल, जयपुर | महात्मा गाँधी हॉस्पिटल, जयपुर",
+      "स्त्री रोग विशेषज्ञ पूर्व चिकित्सक SMS हॉस्पिटल, जयपुर महात्मा गाँधी हॉस्पिटल, जयपुर",
     availability: "24 Hours Available",
   },
   {
     name: "डॉ. कनक अरोड़ा",
-    image: "images/team/team1.jpeg",
+    image: "",
     specialty: "M.B.B.S., D.N.B., (Orthopedics)",
     experience: "हड्डी रोग विशेषज्ञ",
     availability: "24 Hours Available",
   },
   {
     name: "डॉ. चन्द्रशेखर शर्मा",
-    image: "images/team/team1.jpeg",
+    image: "",
     specialty: "M.Ch. (Urology)",
     experience: "मूत्र रोग विशेषज्ञ",
     availability: "24 Hours Available",
@@ -70,26 +73,35 @@ const Home = () => {
                   orthopedic/urology care.
                 </p>
 
-                <div className="mt-4 d-flex flex-wrap gap-2">
-                  <a href="#appointment" className="btn btn-primary-custom">
-                    <i className="fas fa-calendar-check"></i> Book Appointment
-                  </a>
 
-                  <a
-                    href="tel:+919587298975"
+                <div className="mt-4 d-flex flex-wrap gap-2">
+
+                  <Link
+                    to="/hospital-appointment"
+                    className="btn btn-primary-custom"
+                  >
+                    <i className="bi bi-calendar2-check me-2"></i>
+                    Book Appointment
+                  </Link>
+
+                  <Link
+                    to="tel:+919587298975"
                     className="btn btn-emergency"
                   >
-                    <i className="fas fa-phone-alt"></i> Call Emergency
-                  </a>
+                    <i className="bi bi-telephone-fill me-2"></i>
+                    Call Emergency
+                  </Link>
 
-                  <a
-                    href="https://wa.me/919587298975"
+                  <Link
+                    to="https://wa.me/919587298975"
                     className="btn btn-success"
                     target="_blank"
                     rel="noreferrer"
                   >
-                    <i className="fab fa-whatsapp"></i> WhatsApp Now
-                  </a>
+                    <i className="bi bi-whatsapp me-2"></i>
+                    WhatsApp Now
+                  </Link>
+
                 </div>
               </div>
             </div>
@@ -154,7 +166,7 @@ const Home = () => {
             </div>
 
             <div className="col-lg-6" data-aos="fade-left">
-              <span className="text-uppercase text-sm fw-bold" style={{ background: "var(--secondary)" }}>Welcome to Asad Hospital</span>
+              <span className="text-uppercase text-sm fw-bold" style={{ color: "var(--secondary)" }}>Welcome to Asad Hospital</span>
               <h2 className="mt-2">Providing Compassionate & Quality Healthcare Services</h2>
               <div className="divider-left"></div>
 
@@ -300,6 +312,7 @@ const Home = () => {
           </div>
         </div>
       </section>
+      <HomeGallery />
 
       {/* GOVERNMENT SCHEMES & INSURANCE BASE SYSTEM */}
       <section className="section scheme-section" id="schemes">
@@ -338,9 +351,8 @@ const Home = () => {
           </div>
         </div>
       </section>
-
-    {/* FAQ  */}
-    <FaqSection />
+      {/* FAQ  */}
+      <FaqSection />
     </>
   );
 };

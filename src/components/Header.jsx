@@ -24,12 +24,35 @@ const Header = () => {
       </div>
 
       {/* NAVBAR */}
-      <nav className="navbar navbar-expand-lg sticky-top">
+      <nav className="navbar navbar-expand-lg sticky-top py-0 my-0">
         <div className="container">
-          <Link className="navbar-brand" to="/">
-            <h3>ASAD HOSPITAL</h3>
-            <span>24x7 Multispeciality & Emergency Care</span>
+          {/* LOGO + TEXT */}
+          <Link
+            className="navbar-brand d-flex align-items-center gap-3 m-0"
+            to="/"
+          >
+            <img
+              src="logo.jpg"
+              width={70}
+              height={70}
+              className="img-fluid object-fit-contain"
+              alt="Asad Hospital Logo"
+            />
+
+            <div className="d-flex flex-column lh-sm">
+              <h3 className="m-0 fw-bolder navbar-brand">
+               <b> ASAD HOSPITAL</b>
+              </h3>
+
+              <span
+                className="text-success small fw-semibold"
+                style={{ fontSize: "11px" }}
+              >
+                24x7 Multispeciality & Emergency Care
+              </span>
+            </div>
           </Link>
+
 
           <button
             className="navbar-toggler"
@@ -77,10 +100,15 @@ const Header = () => {
                   Contact Us
                 </NavLink>
               </li>
+              <li className="nav-item">
+                <NavLink className="nav-link" to="/faq-asad-hospital">
+                  FAQ
+                </NavLink>
+              </li>
 
               <li className="nav-item ms-lg-2 mt-2 mt-lg-0">
                 <Link
-                  to="/appointment"
+                  to="/hospital-appointment"
                   className="btn btn-secondary-custom btn-sm py-2 px-3 text-white"
                 >
                   Book Appointment

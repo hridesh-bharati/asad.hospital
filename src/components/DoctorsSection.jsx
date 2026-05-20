@@ -9,34 +9,34 @@ const TRUST_BADGES = [
 const DOCTORS_DATA = [
   {
     name: "Dr. Sahun Khan",
-    degrees: "MBBS, MS",
+    degrees: "M.B.B.S, MS, FIAGES, FMAS",
     specialty: "General & Laparoscopic Surgeon",
     specialtyIcon: "⚕️",
-    image: "https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=400&h=400&fit=crop",
+    image: "images/team/team2.jpeg",
     expertise: ["Laparoscopic Surgery", "Gallbladder Surgery", "Appendix Surgery", "Hernia Surgery"],
   },
   {
     name: "Dr. Parveen",
-    degrees: "MBBS, MS",
+    degrees: "M.B.B.S, MS FMAS",
     specialty: "Obstetrician & Gynecologist",
     specialtyIcon: "🌸",
-    image: "https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=400&h=400&fit=crop",
+    image: "images/team/team1.jpeg",
     expertise: ["Normal Delivery", "Cesarean Section", "Pregnancy Care", "Women Health"],
   },
   {
     name: "Dr. Kanakaroda",
-    degrees: "MBBS, MS Orthopedics",
+    degrees: "M.B.B.S, D.N.B, (Orthopedics)",
     specialty: "Orthopedic Specialist",
     specialtyIcon: "🦴",
-    image: "https://images.unsplash.com/photo-1622253692010-333f2da6031d?w=400&h=400&fit=crop",
+    image: "",
     expertise: ["Bone Fractures", "Joint Pain", "Trauma Injuries", "Orthopedic Problems"],
   },
   {
     name: "Dr. Chandrashekar Sharma",
-    degrees: "MS, MCh",
+    degrees: "M.Ch (Urology)",
     specialty: "Urologist",
     specialtyIcon: "💧",
-    image: "https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=400&h=400&fit=crop",
+    image: "",
     expertise: ["Urinary Problems", "Kidney Stone", "Urinary Infection", "Male Disorders"],
   },
 ];
@@ -94,14 +94,6 @@ const DoctorCard = ({ doctor }) => (
               </span>
             ))}
           </div>
-        </div>
-
-        {/* Action Button - Premium iOS Blue Style */}
-        <div className="d-flex gap-2">
-          <button className="btn btn-primary bg-gradient-primary w-100 rounded-4 fw-bold py-2.5 d-flex align-items-center justify-content-center gap-2 text-white border-0 transition-all btn-app">
-            <span>Book Consult</span>
-            <i className="bi bi-arrow-up-right fw-bold"></i>
-          </button>
         </div>
       </div>
     </div>

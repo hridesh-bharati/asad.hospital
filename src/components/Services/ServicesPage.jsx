@@ -1,231 +1,180 @@
-import React from 'react';
+// ServicesPage.jsx - Clean + DRY + Premium UI (No CSS / Minimal Markup)
 
-// Make sure these are imported in your main index.js or App.js:
-// import 'bootstrap/dist/css/bootstrap.min.css';
-// import 'bootstrap-icons/font/bootstrap-icons.css';
+import React from "react";
 
-const ServicesPage = () => {
-  const servicesData = [
-    {
-      id: 1,
-      title: "General Surgery",
-      description: "Advanced surgical care using modern techniques for various general surgical procedures with focus on patient safety and faster recovery.",
-      icon: "bi-scissors"
-    },
-    {
-      id: 2,
-      title: "Laparoscopic Surgery",
-      description: "Minimally invasive surgery with small incisions, reduced pain, minimal scarring, and significantly faster recovery time.",
-      icon: "bi-activity"
-    },
-    {
-      id: 3,
-      title: "Orthopedic Care",
-      description: "Comprehensive treatment for bone fractures, joint pain, sports injuries, arthritis, and trauma-related orthopedic conditions.",
-      icon: "bi-suit-heart"
-    },
-    {
-      id: 4,
-      title: "Obstetrics & Gynecology",
-      description: "Complete women's health services including normal delivery, C-section, high-risk pregnancy care, and gynecological treatments.",
-      icon: "bi-gender-female"
-    },
-    {
-      id: 5,
-      title: "Emergency & Trauma Care",
-      description: "24/7 emergency medical services with rapid response team, trauma bay, and advanced life support equipment.",
-      icon: "bi-truck"
-    },
-    {
-      id: 6,
-      title: "Urinary Problem Treatment",
-      description: "Specialized consultation and management of kidney stones, urinary infections, prostate issues, and male urinary disorders.",
-      icon: "bi-droplet"
-    },
-    {
-      id: 7,
-      title: "ICU & Critical Care",
-      description: "State-of-the-art intensive care unit with continuous monitoring, ventilators, and 24/7 critical care specialists.",
-      icon: "bi-heart-pulse"
-    },
-    {
-      id: 8,
-      title: "Ambulance Services",
-      description: "Fast emergency transportation with well-equipped ambulances, paramedics, and immediate medical support during transit.",
-      icon: "bi-truck-front"
-    }
-  ];
+const servicesData = [
+  {
+    title: "General Surgery",
+    description: "Advanced surgical care using modern medical procedures with safe recovery and expert surgeons.",
+    icon: "bi-scissors",
+    features: ["Safe Procedures", "Expert Surgeons"],
+  },
+  {
+    title: "Laparoscopic Surgery",
+    description: "Minimally invasive surgery with reduced pain, faster healing, and advanced techniques.",
+    icon: "bi-heart-pulse",
+    features: ["Fast Recovery", "Less Pain"],
+  },
+  {
+    title: "Orthopedic Care",
+    description: "Complete bone and joint treatment including fractures, arthritis, and sports injuries.",
+    icon: "bi-bandaid",
+    features: ["Joint Mobility", "Fracture Care"],
+  },
+  {
+    title: "Emergency Care",
+    description: "24/7 emergency medical services with ICU support and ambulance services.",
+    icon: "bi-hospital",
+    features: ["Rapid Action", "24/7 Available"],
+  },
+  {
+    title: "Women's Healthcare",
+    description: "Advanced maternity care, gynecology consultation, and pregnancy treatments.",
+    icon: "bi-gender-female",
+    features: ["Maternity Care", "Women's Health"],
+  },
+  {
+    title: "ICU & Critical Care",
+    description: "Modern ICU with ventilator support and continuous patient monitoring.",
+    icon: "bi-heart-pulse-fill",
+    features: ["Ventilator Support", "24/7 Monitoring"],
+  },
+  {
+    title: "Urinary Treatment",
+    description: "Kidney stone care, urinary infections treatment, and prostate consultation.",
+    icon: "bi-droplet-half",
+    features: ["Accurate Diagnosis", "Stone Care"],
+  },
+  {
+    title: "Ambulance Services",
+    description: "Fast emergency transportation with life-support ambulances and paramedics.",
+    icon: "bi-truck",
+    features: ["Fast Transit", "Medical Team"],
+  },
+];
 
-  const features = [
-    "24×7 Emergency Services",
-    "Experienced Specialist Doctors",
-    "Cashless TPA Facility",
-    "Rajasthan MAA Yojna Accepted",
-    "Haryana Ayushman Bharat Accepted",
-    "Modern OT & ICU Facilities",
-    "Affordable Treatment",
-    "Patient-Friendly Care"
-  ];
+const whyChooseUs = [
+  "24×7 Emergency Services",
+  "Experienced Specialist Doctors",
+  "Modern ICU & OT Facilities",
+  "Affordable Treatment",
+  "Cashless Insurance Facility",
+  "Patient Friendly Care",
+];
 
+const SectionHeader = ({ title, subtitle }) => (
+  <div className="text-center mb-5">
+    <span className="badge bg-primary-subtle text-primary rounded-pill px-3 py-2 fw-semibold">ASAD HOSPITAL</span>
+    <h2 className="fw-bold display-6 mt-3 mb-3">{title}</h2>
+    <p className="text-muted mx-auto style={{ maxWidth: '700px' }}">{subtitle}</p>
+  </div>
+);
+
+const ServiceCard = ({ title, description, icon, features }) => (
+  <div className="col-md-6 col-xl-3">
+    <div className="card h-100 border-0 shadow-sm p-4 rounded-4 position-relative">
+      <div className="d-flex align-items-center justify-content-center bg-primary text-white rounded-4 mb-4" style={{ width: "65px", height: "65px" }}>
+        <i className={`bi ${icon} fs-2`}></i>
+      </div>
+
+      <h5 className="fw-bold mb-3">{title}</h5>
+      <p className="text-muted small lh-base mb-4">{description}</p>
+
+      <div className="mt-auto">
+        {features.map((item, index) => (
+          <div key={index} className="d-flex align-items-center gap-2 bg-light p-2 rounded-3 mb-2 small fw-semibold">
+            <i className="bi bi-check-circle-fill text-success"></i>
+            <span>{item}</span>
+          </div>
+        ))}
+      </div>
+    </div>
+  </div>
+);
+
+export default function ServicesPage() {
   return (
-    <>
-      {/* Hero Section */}
-      <div className="container py-5">
-        <div className="row">
-          <div className="col-lg-8 mx-auto text-center">
-            <h1 className="display-4 fw-bold mb-3">Our Medical Services</h1>
-            <p className="lead mb-4">
-              At Asad Hospital, we provide comprehensive, compassionate, and advanced medical care 
-              across multiple specialties. Your health is our priority.
-            </p>
-            <div className="d-flex justify-content-center gap-3">
-              <button className="btn btn-danger btn-lg">
-                <i className="bi bi-truck me-2"></i> 24/7 Emergency
-              </button>
-              <button className="btn btn-success btn-lg">
-                <i className="bi bi-check-circle me-2"></i> Book Appointment
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
+    <main className="bg-light min-vh-100">
+      {/* HERO */}
+      <section className="bg-dark text-white py-5 text-center position-relative" style={{ background: "linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), linear-gradient(135deg, #0d6efd, #0dcaf0)" }}>
+        <div className="container py-4">
+          <span className="badge bg-white bg-opacity-25 border border-white border-opacity-25 rounded-pill px-3 py-2 fw-semibold">
+            24×7 Emergency Healthcare
+          </span>
 
-      {/* Services Grid Section */}
-      <div className="container py-5">
-        <div className="row mb-5 text-center">
-          <div className="col">
-            <h2 className="display-5 fw-bold text-primary">Comprehensive Healthcare Services</h2>
-            <p className="lead text-muted">
-              From emergency care to specialized surgeries, we offer a full spectrum of medical services
-            </p>
-            <hr className="w-25 mx-auto border-danger border-2" />
-          </div>
-        </div>
+          <h1 className="display-4 fw-bold text-white mt-4 mb-3">
+            Comprehensive Medical Services
+          </h1>
 
-        <div className="row g-4">
-          {servicesData.map((service) => (
-            <div key={service.id} className="col-md-6 col-lg-3">
-              <div className="card h-100 text-center shadow-sm">
-                <div className="card-body p-4">
-                  <div className="mb-3 text-primary fs-1">
-                    <i className={`bi ${service.icon}`}></i>
-                  </div>
-                  <h5 className="card-title fw-bold mb-3">{service.title}</h5>
-                  <p className="card-text text-muted small">
-                    {service.description}
-                  </p>
-                  <button className="btn btn-link text-danger p-0">
-                    Learn More →
-                  </button>
-                </div>
-              </div>
-            </div>
-          ))}
-        </div>
-      </div>
+          <p className="mx-auto text-white-50 fs-6" style={{ maxWidth: "700px" }}>
+            We provide world-class healthcare facilities with expert doctors, advanced technology, and compassionate patient care.
+          </p>
 
-      {/* Why Choose Us Section */}
-      <div className="container py-5">
-        <div className="row align-items-center">
-          <div className="col-lg-6 mb-4 mb-lg-0">
-            <img 
-              src="https://placehold.co/600x400/0d6efd/white?text=Asad+Hospital+Facilities" 
-              alt="Hospital Facilities" 
-              className="img-fluid rounded shadow"
-            />
-          </div>
-          <div className="col-lg-6">
-            <h2 className="display-5 fw-bold text-primary mb-3">Why Choose Asad Hospital?</h2>
-            <hr className="w-25 border-danger border-2 mb-4" />
-            <p className="lead mb-4">
-              We are committed to providing exceptional healthcare with compassion, 
-              transparency, and advanced medical technology.
-            </p>
-            <div className="row g-3">
-              {features.map((feature, index) => (
-                <div key={index} className="col-md-6">
-                  <div className="d-flex align-items-center">
-                    <i className="bi bi-check-circle text-success me-2"></i>
-                    <span>{feature}</span>
-                  </div>
-                </div>
-              ))}
-            </div>
-            <div className="mt-4">
-              <button className="btn btn-outline-primary">
-                Know More About Us
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
+          <div className="d-flex flex-wrap justify-content-center gap-3 mt-4">
+            <a href="tel:+919587298975" className="btn btn-danger btn-lg rounded-pill px-4 fw-semibold shadow-sm">
+              <i className="bi bi-telephone-fill me-2"></i>
+              Emergency Call
+            </a>
 
-      {/* Government Schemes Section */}
-      <div className="container py-5">
-        <div className="row text-center mb-5">
-          <div className="col">
-            <h2 className="display-5 fw-bold text-primary">Government Schemes & Cashless Facilities</h2>
-            <p className="lead text-muted">
-              We proudly provide treatment under various government healthcare schemes and insurance plans
-            </p>
+            <button className="btn btn-light text-primary btn-lg rounded-pill px-4 fw-semibold shadow-sm">
+              <i className="bi bi-calendar-check-fill me-2"></i>
+              Book Appointment
+            </button>
           </div>
         </div>
-        <div className="row g-4 justify-content-center">
-          <div className="col-md-4 col-sm-6">
-            <div className="card text-center h-100 shadow-sm">
-              <div className="card-body p-4">
-                <div className="mb-3 text-success fs-1">
-                  <i className="bi bi-check-circle-fill"></i>
-                </div>
-                <h4 className="fw-bold">Rajasthan MAA Yojna</h4>
-                <p className="card-text">Complete maternity and child care coverage under Rajasthan government scheme</p>
-              </div>
-            </div>
-          </div>
-          <div className="col-md-4 col-sm-6">
-            <div className="card text-center h-100 shadow-sm">
-              <div className="card-body p-4">
-                <div className="mb-3 text-success fs-1">
-                  <i className="bi bi-check-circle-fill"></i>
-                </div>
-                <h4 className="fw-bold">Ayushman Bharat Yojna</h4>
-                <p className="card-text">Haryana Ayushman Bharat scheme for eligible beneficiaries</p>
-              </div>
-            </div>
-          </div>
-          <div className="col-md-4 col-sm-6">
-            <div className="card text-center h-100 shadow-sm">
-              <div className="card-body p-4">
-                <div className="mb-3 text-success fs-1">
-                  <i className="bi bi-check-circle-fill"></i>
-                </div>
-                <h4 className="fw-bold">All TPA Cashless Facility</h4>
-                <p className="card-text">Cashless treatment available with all major TPAs and insurance partners</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+      </section>
 
-      {/* Call to Action */}
-      <div className="container-fluid bg-primary text-white py-5 text-center">
+      {/* SERVICES */}
+      <section className="py-5">
         <div className="container">
-          <div className="row">
-            <div className="col">
-              <h2 className="display-5 fw-bold mb-3">Need Immediate Medical Attention?</h2>
-              <p className="lead mb-4">Our emergency services are available 24/7. Don't wait in case of a medical emergency.</p>
-              <button className="btn btn-light btn-lg me-3">
-                <i className="bi bi-telephone-fill me-2"></i> Call Emergency: +91 9587298975
-              </button>
-              <button className="btn btn-success btn-lg">
-                <i className="bi bi-whatsapp me-2"></i> WhatsApp Now
-              </button>
+          <SectionHeader
+            title="Our Healthcare Services"
+            subtitle="Professional and specialized healthcare services designed for your complete well-being."
+          />
+
+          <div className="row g-4">
+            {servicesData.map((service, index) => (
+              <ServiceCard key={index} {...service} />
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* WHY CHOOSE US */}
+      <section className="py-5 bg-white">
+        <div className="container">
+          <div className="row align-items-center g-5">
+            <div className="col-lg-6">
+              <img
+                src="https://placehold.co/700x500/0d6efd/ffffff?text=ASAD+HOSPITAL"
+                alt="Hospital Facilities"
+                className="img-fluid rounded-4 shadow"
+              />
+            </div>
+
+            <div className="col-lg-6">
+              <span className="badge bg-primary-subtle text-primary rounded-pill px-3 py-2 fw-semibold">
+                Why Choose Us
+              </span>
+
+              <h2 className="fw-bold mt-3 mb-4">
+                Trusted Hospital With Modern Facilities
+              </h2>
+
+              <div className="row g-3">
+                {whyChooseUs.map((item, index) => (
+                  <div className="col-md-6" key={index}>
+                    <div className="p-3 bg-light rounded-3 fw-semibold d-flex align-items-center gap-2 shadow-sm">
+                      <i className="bi bi-check-circle-fill text-success fs-5"></i>
+                      {item}
+                    </div>
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </>
+      </section>
+    </main>
   );
-};
-
-export default ServicesPage;
+}

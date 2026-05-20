@@ -6,23 +6,23 @@ const HospitalGallery = () => {
   const [selectedTitle, setSelectedTitle] = useState("");
 
   const galleryItems = [
-    { id: 1, title: "Hospital Front Elevation", img: "room1.jpeg", alt: "Elevations", icon: "fa-hospital" },
-    { id: 2, title: "Helpdesk & Patient Reception", img: "room2.jpeg", alt: "Reception", icon: "fa-hospital-user" },
-    { id: 3, title: "Intensive Care Unit (ICU)", img: "room3.jpeg", alt: "ICU Ward", icon: "fa-heart-pulse" },
-    { id: 4, title: "Advanced Operation Theatre (OT)", img: "room4.jpeg", alt: "OT Unit", icon: "fa-user-md" },
-    { id: 5, title: "24x7 Ambulance Vehicle", img: "room5.jpeg", alt: "Ambulance", icon: "fa-truck-medical" },
-    { id: 6, title: "Private Patient Rooms", img: "room6.jpeg", alt: "Wards", icon: "fa-bed-pulse" },
-    { id: 7, title: "In-House Radiology & X-Ray", img: "room7.jpeg", alt: "Radiology Lab", icon: "fa-xray" },
-    { id: 8, title: "Fully Equipped Pathology Lab", img: "room8.jpeg", alt: "Pathology Lab", icon: "fa-flask-vial" },
-    { id: 9, title: "24x7 In-House Pharmacy", img: "room9.jpeg", alt: "Pharmacy", icon: "fa-pills" },
-    { id: 10, title: "Emergency & Trauma Ward", img: "room10.jpeg", alt: "Emergency Room", icon: "fa-kit-medical" },
-    { id: 11, title: "General Wards (Male/Female)", img: "room11.jpeg", alt: "General Wards", icon: "fa-bed" },
-    { id: 12, title: "Outpatient Department (OPD)", img: "room12.jpeg", alt: "OPD Clinics", icon: "fa-stethoscope" },
-    { id: 13, title: "Neonatal ICU (NICU)", img: "room13.jpeg", alt: "NICU", icon: "fa-baby" },
-    { id: 14, title: "Physiotherapy & Rehab", img: "room14.jpeg", alt: "Physiotherapy Room", icon: "fa-child-reaching" },
-    { id: 15, title: "Deluxe & Suite Rooms", img: "room15.jpeg", alt: "Deluxe Room", icon: "fa-star" },
-    { id: 16, title: "Patient Waiting Lounge", img: "room16.jpeg", alt: "Waiting Lounge", icon: "fa-users" },
-    { id: 17, title: "Sterilization Zone (CSSD)", img: "room17.jpeg", alt: "Sterilization Unit", icon: "fa-hands-bubbles" }
+    { id: 1, img: "room1.jpeg", alt: "Elevations", icon: "fa-hospital" },
+    { id: 2, img: "room2.jpeg", alt: "Reception", icon: "fa-hospital-user" },
+    { id: 3, img: "room3.jpeg", alt: "ICU Ward", icon: "fa-heart-pulse" },
+    { id: 4, img: "room4.jpeg", alt: "OT Unit", icon: "fa-user-md" },
+    { id: 5, img: "room5.jpeg", alt: "Ambulance", icon: "fa-truck-medical" },
+    { id: 6, img: "room6.jpeg", alt: "Wards", icon: "fa-bed-pulse" },
+    { id: 7, img: "room7.jpeg", alt: "Radiology Lab", icon: "fa-xray" },
+    { id: 8, img: "room8.jpeg", alt: "Pathology Lab", icon: "fa-flask-vial" },
+    { id: 9, img: "room9.jpeg", alt: "Pharmacy", icon: "fa-pills" },
+    { id: 10,img: "room10.jpeg", alt: "Emergency Room", icon: "fa-kit-medical" },
+    { id: 11,img: "room11.jpeg", alt: "General Wards", icon: "fa-bed" },
+    { id: 12,img: "room12.jpeg", alt: "OPD Clinics", icon: "fa-stethoscope" },
+    { id: 13,img: "room13.jpeg", alt: "NICU", icon: "fa-baby" },
+    { id: 14, img: "room14.jpeg", alt: "Physiotherapy Room", icon: "fa-child-reaching" },
+    { id: 15,img: "room15.jpeg", alt: "Deluxe Room", icon: "fa-star" },
+    { id: 16,img: "room16.jpg", alt: "Waiting Lounge", icon: "fa-users" },
+    { id: 17,img: "room17.jpg", alt: "Sterilization Unit", icon: "fa-hands-bubbles" }
   ];
 
   // Image click handle karne ka function
@@ -111,7 +111,6 @@ const HospitalGallery = () => {
                     >
                       <i className={`fa-solid ${item.icon} fs-5`}></i>
                     </div>
-                    <h5 className="fs-6 fw-bold m-0 text-dark">{item.title}</h5>
                   </div>
 
                 </div>

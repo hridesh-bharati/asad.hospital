@@ -58,10 +58,9 @@ export default function AsadHospitalWebsite() {
       {/* ==========================================
     1. HERO SECTION (Spacious, Crisp Clinic-White Design)
 ========================================== */}
-      <section id="home" className="py-5 d-flex align-items-center bg-white border-bottom min-vh-100">
+      <section id="home" className="d-flex align-items-center bg-white border-bottom py-5">
         <div className="container py-5">
-          <div className="row align-items-center g-5">
-
+          <div className="row align-items-center g-5 py-5">
             {/* Left Column: Contextual Typography */}
             <div className="col-lg-6" data-aos="fade-right">
               <span className="badge bg-danger bg-gradient px-4 py-2 rounded-pill mb-3 shadow-sm text-uppercase fw-bold">
@@ -105,7 +104,7 @@ export default function AsadHospitalWebsite() {
               <div className="p-3 bg-light border rounded-4 shadow-sm position-relative">
                 <div className="w-100 overflow-hidden rounded-3 position-relative" style={{ minHeight: '360px', maxHeight: '480px' }}>
                   <img
-                    src="/images/abouts/about-hero.jpg"
+                    src="/images/rooms/gallery1.jpeg"
                     alt="Asad Hospital Clinical Excellence"
                     className="w-100 h-100 object-fit-cover position-absolute top-0 start-0"
                     style={{ objectPosition: 'center' }}
