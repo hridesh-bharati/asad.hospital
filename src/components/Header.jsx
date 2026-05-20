@@ -33,20 +33,22 @@ const Header = () => {
           >
             <img
               src="logo.jpg"
-              width={70}
               height={70}
               className="img-fluid object-fit-contain"
               alt="Asad Hospital Logo"
+              style={{ width: "clamp(3.2rem, 2vw, 3rem)" }}
             />
 
-            <div className="d-flex flex-column lh-sm">
-              <h3 className="m-0 fw-bolder navbar-brand">
-               <b> ASAD HOSPITAL</b>
-              </h3>
-
+            <div className="d-flex flex-column lh-1">
               <span
-                className="text-success small fw-semibold"
-                style={{ fontSize: "11px" }}
+                className="fw-bold text-uppercase navbar-brand"
+                style={{ fontSize: "clamp(1rem, 2vw, 1.5rem)" }}
+              >
+                ASAD HOSPITAL
+              </span>
+              <span
+                className="text-success fw-semibold py-1"
+                style={{ fontSize: "clamp(0.5rem, 1.2vw, 0.7rem)" }}
               >
                 24x7 Multispeciality & Emergency Care
               </span>

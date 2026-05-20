@@ -3,7 +3,7 @@ import React from "react";
 const Footer = () => {
   return (
     <>
-      <footer className="footer" style={{ background: '#0a0a0a' }}>
+      <footer className="footer" style={{ background: '#010122' }}>
         <div className="container">
           <div className="row g-4">
             <div className="col-lg-4 col-md-6">

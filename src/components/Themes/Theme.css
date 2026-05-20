@@ -1,0 +1,49 @@
+/* --- Background Glow Circles System --- */
+.glow-wrapper {
+  position: absolute;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 1;
+  filter: blur(90px);
+}
+
+.glow-teal-top-left {
+  width: 500px;
+  height: 500px;
+  top: -10%;
+  left: '-5%';
+  background: radial-gradient(circle, rgba(0, 168, 150, 0.15) 0%, transparent 70%);
+}
+
+.glow-blue-top-right {
+  width: 550px;
+  height: 550px;
+  top: 10%;
+  right: -10%;
+  background: radial-gradient(circle, rgba(0, 123, 255, 0.18) 0%, transparent 70%);
+}
+
+.glow-purple-center-left {
+  width: 450px;
+  height: 450px;
+  top: 45%;
+  left: -10%;
+  background: radial-gradient(circle, rgba(102, 51, 238, 0.12) 0%, transparent 70%);
+}
+
+.glow-cyan-bottom-right {
+  width: 600px;
+  height: 600px;
+  bottom: -10%;
+  right: -5%;
+  background: radial-gradient(circle, rgba(0, 212, 255, 0.16) 0%, transparent 70%);
+}
+/* --- Services Card Custom Shadow Hover Class --- */
+.premium-service-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease !important;
+}
+
+.premium-service-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 15px 35px rgba(13, 110, 253, 0.15) !important; /* Bluewise Glow */
+}

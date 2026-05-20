@@ -2,7 +2,8 @@
 import React, { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import { Link } from 'react-router-dom';
+import { Link, Links } from 'react-router-dom';
+import Counter from './Counter';
 
 export default function AsadHospitalWebsite() {
 
@@ -17,24 +18,16 @@ export default function AsadHospitalWebsite() {
     { text: "All TPA Cashless Facility", icon: "fa-check text-info" }
   ];
 
-  // DRY Configuration: Core Stats Dataset
-  const stats = [
-    { title: "25,000+", subtitle: "Happy Patients Treated", icon: "fa-smile text-warning" },
-    { title: "15+", subtitle: "Specialist Doctors Team", icon: "fa-user-md text-info" },
-    { title: "50+", subtitle: "Beds Capacity Ward", icon: "fa-procedures text-success" },
-    { title: "24/7", subtitle: "Trauma Emergency Cover", icon: "fa-heartbeat text-danger" }
-  ];
-
   // DRY Configuration: Hospital Specialities Matrix
   const services = [
-    { title: 'General Surgery', desc: 'Advanced traditional and modern medical surgical care.', icon: 'fa-scalpel', color: 'bg-teal text-white' },
-    { title: 'Laparoscopic Surgery', desc: 'Minimally invasive keyhole surgeries for faster recovery.', icon: 'fa-compress-arrows-alt', color: 'bg-info text-white' },
-    { title: 'Orthopedic Care', desc: 'Complete solution for complex bone fractures and joint pains.', icon: 'fa-bone', color: 'bg-teal text-white' },
-    { title: 'Obstetrics & Gynecology', desc: 'Premium women care setup and standard normal delivery.', icon: 'fa-baby', color: 'bg-danger text-white' },
-    { title: 'Emergency & Trauma', desc: 'Critical care units and expert doctors available 24 hours.', icon: 'fa-ambulance', color: 'bg-danger text-white' },
-    { title: 'Urinary Treatment', desc: 'Diagnostics and consultations for complex kidney stones.', icon: 'fa-prescription-bottle-medical', color: 'bg-warning text-dark' },
-    { title: 'ICU & Critical Care', desc: 'Equipped with specialized continuous digital monitoring.', icon: 'fa-heartbeat', color: 'bg-secondary text-white' },
-    { title: 'Ambulance Services', desc: 'Immediate dispatch and oxygen emergency transport support.', icon: 'fa-truck-medical', color: 'bg-info text-white' }
+    { title: 'General Surgery', desc: 'Advanced traditional and modern medical surgical care.', icon: 'bi-activity', color: 'bg-danger text-white' },
+    { title: 'Laparoscopic Surgery', desc: 'Minimally invasive keyhole surgeries for faster recovery.', icon: 'bi-heart-pulse', color: 'bg-info text-white' },
+    { title: 'Orthopedic Care', desc: 'Complete solution for complex bone fractures and joint pains.', icon: 'bi-person-arms-up', color: 'bg-danger text-white' },
+    { title: 'Obstetrics & Gynecology', desc: 'Premium women care setup and standard normal delivery.', icon: 'bi-gender-female', color: 'bg-success text-white' },
+    { title: 'Emergency & Trauma', desc: 'Critical care units and expert doctors available 24 hours.', icon: 'bi-hospital', color: 'bg-danger text-white' },
+    { title: 'Urinary Treatment', desc: 'Diagnostics and consultations for complex kidney stones.', icon: 'bi-droplet-half', color: 'bg-warning text-dark' },
+    { title: 'ICU & Critical Care', desc: 'Equipped with specialized continuous digital monitoring.', icon: 'bi-heart-pulse-fill', color: 'bg-secondary text-white' },
+    { title: 'Ambulance Services', desc: 'Immediate dispatch and oxygen emergency transport support.', icon: 'bi-truck', color: 'bg-info text-white' }
   ];
 
   // DRY Configuration: Specialist Medical Personnel Roster
@@ -54,17 +47,24 @@ export default function AsadHospitalWebsite() {
 
   return (
     <div className="bg-light text-dark text-opacity-75" style={{ scrollBehavior: 'smooth' }}>
-
       {/* ==========================================
-    1. HERO SECTION (Spacious, Crisp Clinic-White Design)
+    1. HERO SECTION (Spacious, Premium Glow Design)
 ========================================== */}
-      <section id="home" className="d-flex align-items-center bg-white border-bottom py-5">
-        <div className="container py-5">
-          <div className="row align-items-center g-5 py-5">
+      <section id="home" className="d-flex align-items-center bg-white border-bottom py-lg-5 position-relative overflow-hidden">
+
+        {/* CSS क्लास आधारित बैकग्राउंड सर्कल्स (No Inlines) */}
+        <div className="glow-wrapper glow-teal-top-left"></div>
+        <div className="glow-wrapper glow-blue-top-right"></div>
+        <div className="glow-wrapper glow-purple-center-left"></div>
+        <div className="glow-wrapper glow-cyan-bottom-right"></div>
+
+        <div className="container py-5 position-relative" style={{ zIndex: 2 }}>
+          <div className="row align-items-center g-5 py-lg-5">
+
             {/* Left Column: Contextual Typography */}
-            <div className="col-lg-6" data-aos="fade-right">
+            <div className="col-lg-6" data-aos="fade-up">
               <span className="badge bg-danger bg-gradient px-4 py-2 rounded-pill mb-3 shadow-sm text-uppercase fw-bold">
-                <i className="fas fa-star-of-life me-2"></i> Emergency Desk Active 24/7
+                <i className="bi bi-activity me-2"></i> Emergency Desk Active 24/7
               </span>
 
               <h1 className="display-4 fw-bold text-dark mb-3 tracking-tight">
@@ -72,7 +72,7 @@ export default function AsadHospitalWebsite() {
                 <span className="fs-2 text-success d-block mt-1 fw-normal">Trusted Multispeciality Care in Alwar</span>
               </h1>
 
-              <p className="lead fs-5 text-muted mb-4 pb-2">
+              <p className="lead small text-muted mb-4 pb-2">
                 Providing quality, affordable, and highly accessible healthcare solutions under the leadership of expert medical practitioners.
               </p>
 
@@ -80,28 +80,28 @@ export default function AsadHospitalWebsite() {
               <div className="d-flex flex-wrap gap-2 mb-4">
                 {schemes.map((sch, i) => (
                   <span key={i} className="badge bg-light text-dark border-start border-success border-4 p-2 px-3 rounded shadow-sm fw-bold">
-                    <i className={`fas ${sch.icon} me-1`}></i> {sch.text}
+                    <i className={`bi ${sch.icon} me-1`}></i> {sch.text}
                   </span>
                 ))}
               </div>
 
               {/* Action Trigger Interface Controls */}
               <div className="d-flex flex-wrap gap-3">
-                <a href="#contact" className="btn btn-warning bg-gradient text-dark btn-lg px-4 py-3 fw-bold rounded-pill shadow-sm">
-                  <i className="fas fa-calendar-check me-2"></i> Book Appointment
-                </a>
+                <Link to={"/hospital-appointment"} className="btn btn-warning bg-gradient text-dark btn-lg px-4 py-3 fw-bold rounded-pill shadow-sm" >
+                  <i className="bi bi-calendar-check me-2"></i> Book Appointment
+                </Link>
                 <a href="tel:+919587298975" className="btn btn-danger bg-gradient text-white btn-lg px-4 py-3 fw-bold rounded-pill shadow-sm">
-                  <i className="fas fa-phone-alt me-2"></i> Call Emergency
+                  <i className="bi bi-telephone me-2"></i> Call Emergency
                 </a>
-                <a href="https://wa.me/919587298975" className="btn btn-success bg-gradient text-white btn-lg px-4 py-3 fw-bold rounded-pill shadow-sm">
-                  <i className="fab fa-whatsapp me-2"></i> WhatsApp Now
+                <a href="https://wa.me/919587298975" className="btn btn-success bg-gradient text-white btn-lg px-4 py-3 fw-bold rounded-pill shadow-sm" target="_blank" rel="noreferrer">
+                  <i className="bi bi-whatsapp me-2"></i> WhatsApp Now
                 </a>
               </div>
             </div>
 
-            {/* Right Column: Clean Medical Graphic Banner with Image */}
+            {/* Right Column: Clean Medical Graphic Banner with Image & Hover Glow */}
             <div className="col-lg-6" data-aos="fade-left" data-aos-delay="200">
-              <div className="p-3 bg-light border rounded-4 shadow-sm position-relative">
+              <div className="p-0 p-lg-2 bg-white border rounded-4 shadow-sm position-relative premium-service-card">
                 <div className="w-100 overflow-hidden rounded-3 position-relative" style={{ minHeight: '360px', maxHeight: '480px' }}>
                   <img
                     src="/images/rooms/gallery1.jpeg"
@@ -111,7 +111,7 @@ export default function AsadHospitalWebsite() {
                   />
                   {/* Absolute Anchored Trust Indicators Over Image */}
                   <span className="position-absolute top-0 end-0 m-3 badge bg-white text-success shadow-sm fw-bold border p-2 z-1">
-                    <i className="fas fa-award text-warning me-1"></i> Since 2010
+                    <i className="bi bi-award text-warning me-1"></i> Since 2010
                   </span>
                 </div>
               </div>
@@ -120,7 +120,6 @@ export default function AsadHospitalWebsite() {
           </div>
         </div>
       </section>
-
       {/* ==========================================
           2. ABOUT US SECTION
       ========================================== */}
@@ -148,19 +147,7 @@ export default function AsadHospitalWebsite() {
             </div>
 
             {/* Quick Metrics Layout (DRY Iterated Block) */}
-            <div className="col-lg-6" data-aos="zoom-in" data-aos-delay="200">
-              <div className="row g-3 text-center">
-                {stats.map((st, idx) => (
-                  <div className="col-6" key={idx}>
-                    <div className="p-4 bg-light rounded-3 shadow-sm border">
-                      <i className={`fas ${st.icon} fs-1 mb-2`}></i>
-                      <span className="d-block h2 fw-bold text-dark mb-1">{st.title}</span>
-                      <small className="text-muted d-block small">{st.subtitle}</small>
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </div>
+           <Counter />
 
           </div>
         </div>
@@ -169,28 +156,45 @@ export default function AsadHospitalWebsite() {
       {/* ==========================================
           3. SERVICES SECTION
       ========================================== */}
-      <section id="services" className="py-5 bg-light border-top border-bottom">
-        <div className="container py-4">
+      <section id="services" className="py-5 bg-light border-top border-bottom position-relative overflow-hidden">
+        {/* CSS क्लास आधारित बैकग्राउंड सर्कल्स */}
+        <div className="glow-wrapper glow-teal-top-left"></div>
+        <div className="glow-wrapper glow-blue-top-right"></div>
+        <div className="glow-wrapper glow-purple-center-left"></div>
+        <div className="glow-wrapper glow-cyan-bottom-right"></div>
+
+        <div className="container py-4 position-relative" style={{ zIndex: 2 }}>
+
+          {/* हेडर */}
           <div className="text-center mx-auto mb-5" style={{ maxWidth: '600px' }} data-aos="fade-down">
             <span className="badge bg-success bg-gradient px-3 py-2 rounded-pill mb-2">MEDICAL FACILITIES</span>
             <h2 className="fw-bold display-6 text-dark">Our Medical Services & Specialties</h2>
             <p className="text-muted small">Comprehensive highly specialized tactical treatment blueprints under one centralized interface in Alwar.</p>
           </div>
 
+          {/* ग्रिड */}
           <div className="row g-4">
             {services.map((srv, idx) => (
               <div className="col-lg-3 col-md-6" key={idx} data-aos="fade-up" data-aos-delay={idx * 50}>
-                <div className="p-4 bg-white rounded-3 shadow-sm border h-100 text-center">
-                  <div className={`${srv.color} rounded-circle d-inline-flex p-3 mb-3 shadow-sm`}><i className={`fas ${srv.icon} fs-4`}></i></div>
+
+                {/* शुद्ध CSS क्लास आधारित प्रीमियम कार्ड */}
+                <div className="p-4 bg-white rounded-3 shadow-sm border h-100 text-center premium-service-card">
+
+                  {/* आइकॉन कंटेनर */}
+                  <div className={`${srv.color} rounded-circle d-inline-flex p-3 mb-3 shadow-sm`}>
+                    <i className={`bi ${srv.icon} fs-4 px-2`}></i>
+                  </div>
+
                   <h5 className="fw-bold text-dark mb-2 small text-uppercase tracking-wide">{srv.title}</h5>
                   <p className="text-muted small mb-0">{srv.desc}</p>
                 </div>
+
               </div>
             ))}
           </div>
+
         </div>
       </section>
-
 
       {/* ==========================================
             4. DOCTORS PANEL SECTION
@@ -199,7 +203,7 @@ export default function AsadHospitalWebsite() {
         <div className="container py-4">
           <div className="text-center mx-auto mb-5" style={{ maxWidth: '600px' }} data-aos="fade-up">
             <span className="badge bg-dark px-3 py-2 rounded-pill mb-2">EXPERTS PANEL</span>
-            <h2 className="fw-bold display-6 text-dark">Meet Our Specialist Doctors</h2>
+            <h2 className="fw-bold display-6 text-gradient">Meet Our Specialist Doctors</h2>
             <p className="text-muted small">Highly certified surgical directors and clinical physicians available on immediate call rotation setups.</p>
           </div>
 

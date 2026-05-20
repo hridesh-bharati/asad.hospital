@@ -26,14 +26,14 @@ const faqData = [
       { q: "Is Asad Hospital suitable for rural patients coming from outside Alwar?", a: "Absolutely. The hospital welcomes patients from Rajasthan and nearby states. Being centrally located in Alwar makes it easily reachable from towns like Behror, Kishangarh, Kotputli, Tijara, and Thanagazi." },
       { q: "Does the hospital provide second opinions?", a: "Yes, you can consult any of our specialists for a second opinion on diagnoses, surgical plans, or treatment choices from other hospitals." },
       { q: "What languages does the hospital support?", a: "Hindi and English are the primary languages of communication. Most of our clinical staff are fluent in local Rajasthani dialects as well." },
-      { q: "Is Asad Hospital affiliated with any medical university or association?", a: "Our doctors hold qualifications from reputed institutions and are members of national medical bodies such as FIAGES (Federation of Indian Associations of Gastrointestinal Endoscopic Surgeons) and FMAS." },
+      { q: "Is Asad Hospital affiliated with any medical university or association?", a: "Our doctors hold qualifications from reputed institutions and are members of national medical bodies such as FIAGES (Federation of Indian Associations of Gastrointestinal Endoscopic Surgeons) and FMAS." }
     ]
   },
   {
     category: "Our Doctors & Specialists",
     icon: "👨‍⚕️",
-    badgeColor: "#7c3aed",
-    bgColor: "#f5f3ff",
+    badgeColor: "#673ab7",
+    bgColor: "#f3e5f5",
     items: [
       { q: "Who is the General Surgeon at Asad Hospital?", a: "Dr. Sahun Khan (MBBS, MS, FIAGES, FMAS) is the Senior General & Laparoscopic Surgeon. He has previously served at SMS Hospital Jaipur, Safdarjang Hospital Delhi, and ESIC Hospital Delhi." },
       { q: "Who is the Gynaecologist at Asad Hospital?", a: "Dr. Parveen Khan (MBBS, MS, FMAS) is the Gynaecology & Obstetrics specialist. She has prior experience at SMS Hospital Jaipur and Mahatma Gandhi Hospital Jaipur." },
@@ -59,14 +59,14 @@ const faqData = [
       { q: "Can I get the doctor's credentials verified?", a: "Yes, all doctors' qualifications are displayed on the prescription pad and hospital signage. You can also ask the front desk for verification of certifications." },
       { q: "Is there a resident/on-call doctor available at night?", a: "Yes, since the hospital runs 24×7 emergency services, resident/on-call medical staff are available throughout the night for critical patient care." },
       { q: "Can I choose which doctor I want to see?", a: "Yes, you can request a specific specialist based on your medical condition. The front desk will help guide you to the most appropriate doctor." },
-      { q: "Does the hospital have a senior consultant for complex cases?", a: "Yes. With specialists like Dr. Chandrashekhar Sharma (M.Ch. Urology) and Dr. Sahun Khan (FIAGES, FMAS), complex surgical cases are handled at senior consultant level." },
+      { q: "Does the hospital have a senior consultant for complex cases?", a: "Yes. With specialists like Dr. Chandrashekhar Sharma (M.Ch. Urology) and Dr. Sahun Khan (FIAGES, FMAS), complex surgical cases are handled at senior consultant level." }
     ]
   },
   {
     category: "OPD, Appointments & Timings",
     icon: "📅",
-    badgeColor: "#059669",
-    bgColor: "#f0fdf4",
+    badgeColor: "#388e3c",
+    bgColor: "#e8f5e9",
     items: [
       { q: "What are the OPD timings at Asad Hospital?", a: "OPD is available twice daily: Morning – 9:00 AM to 2:00 PM | Evening – 4:00 PM to 8:00 PM. These timings apply on all regular working days." },
       { q: "How do I book an appointment at Asad Hospital?", a: "You can book by calling 📞 0144-4050241 or 📱 9587298975 / 7976573436. Walk-in appointments are also welcome during OPD hours." },
@@ -87,14 +87,14 @@ const faqData = [
       { q: "What is the OPD consultation fee?", a: "Consultation fees are reasonable and affordable. Please call 9587298975 for the latest fee schedule as it may vary by specialist." },
       { q: "Can I get a second opinion from another specialist at the same visit?", a: "Yes, since multiple specialists are available, you can consult a second doctor during the same visit if needed. The front desk can help coordinate this." },
       { q: "Does the hospital maintain patient records?", a: "Yes, patient records and consultation history are maintained to ensure continuity of care across multiple visits." },
-      { q: "Is there a separate child OPD?", a: "Paediatric patients are seen by relevant specialists based on the condition (e.g., ENT, orthopaedics). For general paediatric care queries, contact the hospital directly." },
+      { q: "Is there a separate child OPD?", a: "Paediatric patients are seen by relevant specialists based on the condition (e.g., ENT, orthopaedics). For general paediatric care queries, contact the hospital directly." }
     ]
   },
   {
     category: "General Surgery & Laparoscopy",
     icon: "🔬",
-    badgeColor: "#dc2626",
-    bgColor: "#fff1f2",
+    badgeColor: "#d32f2f",
+    bgColor: "#ffebee",
     items: [
       { q: "What surgeries does Dr. Sahun Khan perform at Asad Hospital?", a: "Dr. Sahun Khan performs general surgeries (appendectomy, hernia repair, bowel surgeries) as well as advanced laparoscopic procedures including cholecystectomy (gallbladder removal), laparoscopic appendectomy, and diagnostic laparoscopy." },
       { q: "What is laparoscopic surgery?", a: "Laparoscopic (keyhole) surgery uses small incisions and a camera to perform operations inside the abdomen. It results in less pain, smaller scars, reduced blood loss, and a faster recovery compared to open surgery." },
@@ -113,14 +113,14 @@ const faqData = [
       { q: "What is the hospital's operation theatre like?", a: "The operation theatre is equipped with modern surgical instruments, monitoring equipment, and maintained under strict sterility protocols to ensure patient safety during all procedures." },
       { q: "Can thyroid or neck surgeries be performed here?", a: "For specific surgical procedures outside core specialties, please contact the hospital directly. The team will advise or refer appropriately." },
       { q: "How soon after diagnosis can surgery be scheduled?", a: "Elective surgeries can usually be scheduled within a few days of diagnosis. Emergency surgeries are performed immediately based on clinical urgency." },
-      { q: "What post-operative care is provided after surgery?", a: "Post-operative care includes wound dressing, pain management, monitoring of vitals, dietary guidance, and follow-up consultations to ensure smooth recovery." },
+      { q: "What post-operative care is provided after surgery?", a: "Post-operative care includes wound dressing, pain management, monitoring of vitals, dietary guidance, and follow-up consultations to ensure smooth recovery." }
     ]
   },
   {
     category: "Gynaecology & Women's Health",
     icon: "👩‍⚕️",
-    badgeColor: "#db2777",
-    bgColor: "#fdf2f8",
+    badgeColor: "#c2185b",
+    bgColor: "#fce4ec",
     items: [
       { q: "What gynaecological services are available at Asad Hospital?", a: "Dr. Parveen Khan (MBBS, MS, FMAS) provides comprehensive women's healthcare including antenatal care, normal delivery, C-section, gynaecological surgeries, and treatment of menstrual and hormonal disorders." },
       { q: "Is Asad Hospital good for pregnancy and delivery?", a: "Yes, Dr. Parveen Khan is an experienced obstetrician with MS qualifications and experience at SMS Hospital Jaipur. She manages normal and complicated pregnancies, deliveries, and post-natal care." },
@@ -139,14 +139,14 @@ const faqData = [
       { q: "Are female nurses available during gynaecology consultations?", a: "Yes, female nursing staff are available to assist during gynaecological examinations to ensure patient privacy, comfort, and dignity." },
       { q: "Is newborn care available after delivery?", a: "Basic newborn care and initial assessment are provided at the hospital. For neonatal ICU requirements, the team will guide you to appropriate facilities." },
       { q: "What vaccinations are recommended during pregnancy?", a: "Dr. Parveen Khan will advise on vaccines like Td (Tetanus-Diphtheria) and other immunisations as per government maternal health guidelines during antenatal visits." },
-      { q: "Can post-menopausal women consult Dr. Parveen Khan?", a: "Yes, Dr. Parveen Khan also manages post-menopausal health concerns including hormonal changes, bone health, vaginal atrophy, and screening for gynaecological cancers." },
+      { q: "Can post-menopausal women consult Dr. Parveen Khan?", a: "Yes, Dr. Parveen Khan also manages post-menopausal health concerns including hormonal changes, bone health, vaginal atrophy, and screening for gynaecological cancers." }
     ]
   },
   {
     category: "Orthopaedics, Urology & ENT",
     icon: "🦴",
-    badgeColor: "#d97706",
-    bgColor: "#fffbeb",
+    badgeColor: "#f57c00",
+    bgColor: "#fff3e0",
     items: [
       { q: "What conditions does the Orthopaedic department treat?", a: "Dr. Kanak Arora (D.N.B. Orthopaedics) treats fractures, joint pain, sports injuries, back pain, osteoarthritis, ligament tears, and bone infections. He performs both surgical and non-surgical management." },
       { q: "Is Dr. Kanak Arora available for fracture treatment?", a: "Yes, all types of fractures – simple, compound, or complex – are managed by Dr. Kanak Arora, with plaster, splinting, or surgical fixation (ORIF) as appropriate." },
@@ -162,14 +162,14 @@ const faqData = [
       { q: "Can sinus problems be treated at Asad Hospital?", a: "Yes, chronic sinusitis and nasal polyps are treated by Dr. Kundnani through medication or endoscopic sinus surgery (FESS) depending on severity." },
       { q: "What is a septoplasty?", a: "Septoplasty is a surgery to correct a deviated nasal septum that causes breathing difficulty. It falls within Dr. Madhavi Kundnani's ENT surgical expertise." },
       { q: "Can hearing problems be evaluated at Asad Hospital?", a: "Yes, hearing assessment and ear-related complaints including ear discharge, pain, tinnitus (ringing), and hearing loss are evaluated by Dr. Kundnani." },
-      { q: "Is there treatment for vertigo at Asad Hospital?", a: "Yes, vertigo (dizziness) caused by inner ear disorders like BPPV is diagnosed and treated by Dr. Madhavi Kundnani using canalith repositioning manoeuvres and appropriate medication." },
+      { q: "Is there treatment for vertigo at Asad Hospital?", a: "Yes, vertigo (dizziness) caused by inner ear disorders like BPPV is diagnosed and treated by Dr. Madhavi Kundnani using canalith repositioning manoeuvres and appropriate medication." }
     ]
   },
   {
     category: "Chest, Pulmonology & Lung Health",
     icon: "🫁",
-    badgeColor: "#0891b2",
-    bgColor: "#ecfeff",
+    badgeColor: "#0097a7",
+    bgColor: "#e0f7fa",
     items: [
       { q: "What conditions does the Chest & Pulmonology department treat?", a: "Dr. Lokesh Lalwani (MBBS, DNB, FCCS – Chest Physician & Interventional Pulmonologist) treats asthma, COPD, pneumonia, tuberculosis (TB), lung infections, pleural effusion, and breathlessness." },
       { q: "What does FCCS stand for?", a: "FCCS stands for Fellow of Critical Care Society, indicating Dr. Lalwani's specialised training in critical care and advanced pulmonary medicine." },
@@ -180,14 +180,14 @@ const faqData = [
       { q: "Is bronchoscopy available at Asad Hospital?", a: "Yes, flexible bronchoscopy for diagnosing lung cancer, infections, or airway obstructions is within Dr. Lalwani's scope of practice as an Interventional Pulmonologist." },
       { q: "What are common symptoms that require a Pulmonologist?", a: "See Dr. Lalwani for: persistent cough (more than 3 weeks), breathlessness, wheezing, chest tightness, blood in cough (haemoptysis), recurring chest infections, or night sweats with fever." },
       { q: "Is sleep apnoea diagnosed at the hospital?", a: "Dr. Lalwani can evaluate sleep-disordered breathing and obstructive sleep apnoea. Further polysomnography (sleep study) may be referred if needed." },
-      { q: "What is pleural effusion and can it be treated here?", a: "Pleural effusion is fluid accumulation around the lungs causing breathing difficulty. Dr. Lalwani performs thoracentesis (pleural fluid drainage) as part of interventional pulmonology care." },
+      { q: "What is pleural effusion and can it be treated here?", a: "Pleural effusion is fluid accumulation around the lungs causing breathing difficulty. Dr. Lalwani performs thoracentesis (pleural fluid drainage) as part of interventional pulmonology care." }
     ]
   },
   {
     category: "Emergency & Critical Care",
     icon: "🚨",
-    badgeColor: "#dc2626",
-    bgColor: "#fff1f2",
+    badgeColor: "#e53935",
+    bgColor: "#ffebee",
     items: [
       { q: "Is Asad Hospital open for emergencies 24 hours a day?", a: "Yes, Asad Hospital provides 24×7 emergency care with on-call doctors, nursing staff, and a fully equipped emergency department at all times." },
       { q: "What is the emergency contact number for Asad Hospital?", a: "🚨 Emergency contacts: Ph: 0144-4050241 | Mobile: 9587298975 & 7976573436. Save these numbers for immediate access during medical emergencies." },
@@ -202,15 +202,15 @@ const faqData = [
       { q: "Is there emergency ENT care for throat or airway obstruction?", a: "Yes, airway-related emergencies including throat swelling, foreign body ingestion, or post-operative bleeding after tonsillectomy can be managed on an emergency basis." },
       { q: "What if I have severe breathing difficulty at night?", a: "Rush to Asad Hospital emergency immediately or call the emergency number. The pulmonology and emergency team will provide oxygen support and immediate respiratory care." },
       { q: "Is blood transfusion available at the hospital?", a: "Blood and blood products can be arranged for emergency surgical and medical needs. Please contact the hospital for blood bank coordination." },
-      { q: "What should I bring when arriving at the emergency?", a: "If possible, bring any existing prescriptions, known allergy list, health insurance card, and an Aadhar or ID card. In critical situations, treatment begins immediately without waiting for documents." },
-      { q: "Is there a waiting area for patient attendants during emergencies?", a: "Yes, a designated waiting area is available for patient attendants. The nursing staff keeps families informed about the patient's condition at regular intervals." },
+      { q: "What should I bring when arriving at the emergency?", a: "If possible, bring any existing prescriptions, known allergy list, health insurance card, and an ID card. In critical situations, treatment begins immediately without waiting for documents." },
+      { q: "Is there a waiting area for patient attendants during emergencies?", a: "Yes, a designated waiting area is available for patient attendants. The nursing staff keeps families informed about the patient's condition at regular intervals." }
     ]
   },
   {
     category: "Billing, Insurance & Patient Services",
     icon: "💳",
-    badgeColor: "#16a34a",
-    bgColor: "#f0fdf4",
+    badgeColor: "#2e7d32",
+    bgColor: "#e8f5e9",
     items: [
       { q: "Does Asad Hospital accept cashless insurance?", a: "Please contact the hospital billing department at 0144-4050241 to confirm which insurance panels and cashless facilities are currently accepted." },
       { q: "What payment methods are accepted at Asad Hospital?", a: "The hospital accepts cash payments. For UPI, card, or other payment options, please confirm with the billing counter at the time of admission or OPD." },
@@ -231,7 +231,7 @@ const faqData = [
       { q: "What is the bed charge per day?", a: "Bed and room charges vary by ward type. Please contact the hospital at 0144-4050241 for the current room rate schedule." },
       { q: "Is diet and food provided during admission?", a: "Basic dietary support may be provided during admission. For special dietary needs post-surgery, the nursing staff will advise accordingly." },
       { q: "How do I obtain a referral letter from Asad Hospital?", a: "If your condition requires referral to a higher centre, the treating doctor will provide a formal referral letter with your diagnosis and treatment history." },
-      { q: "Can I get my baby's birth certificate from the hospital?", a: "Yes, Asad Hospital provides birth documentation for all deliveries conducted at the facility, which is required for obtaining the official birth certificate from civic authorities." },
+      { q: "Can I get my baby's birth certificate from the hospital?", a: "Yes, Asad Hospital provides birth documentation for all deliveries conducted at the facility, which is required for obtaining the official birth certificate from civic authorities." }
     ]
   }
 ];
@@ -241,12 +241,10 @@ export default function FaqSection() {
   const [activeCategory, setActiveCategory] = useState("All");
   const [openItems, setOpenItems] = useState({});
 
-  // 1. Create unique categories list safely
   const categories = useMemo(() => {
     return ["All", ...new Set(faqData.map((c) => c.category))];
   }, []);
 
-  // 2. High-performance filtering with useMemo
   const filtered = useMemo(() => {
     const q = search.toLowerCase().trim();
     return faqData
@@ -269,213 +267,134 @@ export default function FaqSection() {
     setOpenItems((prev) => ({ ...prev, [key]: !prev[key] }));
   };
 
-  // Modern Premium UI Typography Stack
-  const modernFontStack = 'Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif';
+  const androidFontStack = 'Roboto, system-ui, -apple-system, sans-serif';
 
   return (
     <div
       style={{
-        fontFamily: modernFontStack,
-        letterSpacing: "-0.01em",
-        maxWidth: "800px",
+        fontFamily: androidFontStack,
+        maxWidth: "100%",
         margin: "0 auto",
-        padding: "40px 20px",
-        color: "#1e293b",
-        backgroundColor: "#ffffff",
-        WebkitFontSmoothing: "antialiased",
-        MozOsxFontSmoothing: "grayscale",
+        padding: "16px",
+        color: "#1f1f1f",
+        backgroundColor: "#f7f9fc",
+        minHeight: "100vh",
+        boxSizing: "border-box"
       }}
     >
-      {/* Search Input Container */}
-      <div style={{ position: "relative", marginBottom: "24px" }}>
-        <span
-          style={{
-            position: "absolute",
-            left: "16px",
-            top: "50%",
-            transform: "translateY(-50%)",
-            fontSize: "18px",
-            color: "#94a3b8",
-            pointerEvents: "none",
-          }}
-        >
+      {/* App Header Bar */}
+      <div style={{ padding: "8px 4px 16px 4px" }}>
+        <h1 style={{ fontSize: "22px", fontWeight: "500", margin: "0 0 4px 0", color: "#1f1f1f" }}>
+          FAQs & Support
+        </h1>
+        <p style={{ fontSize: "14px", color: "#616161", margin: 0 }}>
+          Asad Hospital 24×7 Help Desk Portal
+        </p>
+      </div>
+
+      {/* Android Search Bar */}
+      <div 
+        style={{ 
+          position: "relative", 
+          marginBottom: "16px",
+          boxShadow: "0px 1px 3px rgba(0, 0, 0, 0.1)",
+          borderRadius: "28px",
+          overflow: "hidden"
+        }}
+      >
+        <span style={{ position: "absolute", left: "18px", top: "50%", transform: "translateY(-50%)", fontSize: "18px", color: "#444746", pointerEvents: "none" }}>
           🔍
         </span>
         <input
           type="text"
-          placeholder="Search questions, symptoms, services..."
+          placeholder="Search questions, specialists..."
           value={search}
           onChange={(e) => setSearch(e.target.value)}
           style={{
             width: "100%",
             boxSizing: "border-box",
-            padding: "16px 44px 16px 48px",
-            fontSize: "15px",
-            fontFamily: modernFontStack,
-            letterSpacing: "-0.01em",
-            border: "1.5px solid #e2e8f0",
-            borderRadius: "14px",
+            padding: "16px 44px 16px 52px",
+            fontSize: "16px",
+            fontFamily: androidFontStack,
+            border: "none",
             outline: "none",
-            background: "#f8fafc",
-            color: "#0f172a",
-            transition: "all 0.2s cubic-bezier(0.4, 0, 0.2, 1)",
-            boxShadow: "0 1px 2px rgba(0,0,0,0.02)",
-          }}
-          onFocus={(e) => {
-            e.target.style.borderColor = "#0ea5e9";
-            e.target.style.background = "#fff";
-            e.target.style.boxShadow = "0 0 0 4px rgba(14, 165, 233, 0.12)";
-          }}
-          onBlur={(e) => {
-            e.target.style.borderColor = "#e2e8f0";
-            e.target.style.background = "#f8fafc";
-            e.target.style.boxShadow = "0 1px 2px rgba(0,0,0,0.02)";
+            background: "#fff",
+            color: "#1f1f1f"
           }}
         />
         {search && (
-          <button
-            onClick={() => setSearch("")}
-            style={{
-              position: "absolute",
-              right: "14px",
-              top: "50%",
-              transform: "translateY(-50%)",
-              background: "#e2e8f0",
-              border: "none",
-              cursor: "pointer",
-              fontSize: "10px",
-              color: "#64748b",
-              width: "22px",
-              height: "22px",
-              borderRadius: "50%",
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
-              padding: 0,
-              transition: "background 0.15s",
-            }}
-          >
+          <button onClick={() => setSearch("")} style={{ position: "absolute", right: "16px", top: "50%", transform: "translateY(-50%)", background: "transparent", border: "none", cursor: "pointer", fontSize: "16px", color: "#444746", padding: "4px" }}>
             ✕
           </button>
         )}
       </div>
 
-      {/* Category Tabs */}
+      {/* Category Chips Container with Flex Wrap */}
       <div
         style={{
           display: "flex",
           gap: "8px",
-          flexWrap: "wrap",
-          marginBottom: "32px",
+          flexWrap: "wrap", // Niche automatic multiple lines me wrap karne ke liye
+          padding: "4px 4px 16px 4px"
         }}
       >
         {categories.map((cat) => {
           const catData = faqData.find((c) => c.category === cat);
           const isSelected = activeCategory === cat;
-          const brandColor = catData?.badgeColor || "#0ea5e9";
 
           return (
             <button
               key={cat}
               onClick={() => setActiveCategory(cat)}
               style={{
-                padding: "10px 18px",
-                borderRadius: "24px",
-                border: "1.5px solid",
-                borderColor: isSelected ? brandColor : "#e2e8f0",
-                background: isSelected ? brandColor : "#ffffff",
-                color: isSelected ? "#ffffff" : "#475569",
+                padding: "8px 14px",
+                borderRadius: "8px",
+                border: isSelected ? "none" : "1px solid #79747e",
+                background: isSelected ? "#0061a4" : "#fff",
+                color: isSelected ? "#fff" : "#444746",
                 fontSize: "13.5px",
-                fontWeight: "600",
-                fontFamily: modernFontStack,
-                letterSpacing: "-0.01em",
+                fontWeight: "500",
+                fontFamily: androidFontStack,
                 cursor: "pointer",
-                transition: "all 0.15s cubic-bezier(0.4, 0, 0.2, 1)",
                 display: "flex",
                 alignItems: "center",
-                gap: "8px",
-                boxShadow: isSelected ? "0 4px 12px rgba(14, 165, 233, 0.2)" : "none",
+                gap: "6px"
               }}
             >
-              {cat === "All" ? (
-                <><span>🗂</span> All FAQs</>
-              ) : (
-                <>
-                  <span style={{ fontSize: "15px" }}>{catData?.icon}</span>
-                  {cat}
-                </>
-              )}
+              <span>{cat === "All" ? "🗂" : catData?.icon}</span>
+              {cat === "All" ? "All" : cat}
             </button>
           );
         })}
       </div>
 
-      {/* Dynamic Filter Context Subtitle */}
-      <p style={{ fontSize: "14px", color: "#64748b", marginBottom: "24px", marginTop: 0, fontWeight: "400" }}>
-        Showing <span style={{ color: "#0f172a", fontWeight: "600" }}>{totalVisible}</span> result{totalVisible !== 1 ? "s" : ""}
-        {activeCategory !== "All" && <span> under <code style={{ background: "#f1f5f9", padding: "3px 6px", borderRadius: "6px", color: "#334155", fontSize: "13px", fontWeight: "500" }}>{activeCategory}</code></span>}
-        {search && <span> for "{search}"</span>}
-      </p>
+      {/* Results Status Bar */}
+      <div style={{ padding: "0px 4px 12px 4px", fontSize: "13px", color: "#616161" }}>
+        Found {totalVisible} info asset{totalVisible !== 1 ? "s" : ""}
+        {activeCategory !== "All" && <span> in {activeCategory}</span>}
+      </div>
 
-      {/* Main Container Layer */}
+      {/* Main List Container */}
       {filtered.length === 0 ? (
-        <div style={{ textAlign: "center", padding: "64px 20px", background: "#f8fafc", borderRadius: "20px", border: "1px dashed #e2e8f0" }}>
-          <div style={{ fontSize: "44px", marginBottom: "16px" }}>🔍</div>
-          <h3 style={{ margin: "0 0 6px 0", color: "#334155", fontSize: "16px", fontWeight: "600" }}>No matching answers found</h3>
-          <p style={{ fontSize: "14px", color: "#94a3b8", margin: 0, lineHeight: "1.5" }}>Try tweaking your keywords or clear your active layout filter.</p>
+        <div style={{ textAlign: "center", padding: "48px 16px", background: "#fff", borderRadius: "12px", border: "1px solid #e0e0e0" }}>
+          <div style={{ fontSize: "40px", marginBottom: "12px" }}>💡</div>
+          <h3 style={{ margin: "0 0 4px 0", color: "#1f1f1f", fontSize: "16px", fontWeight: "500" }}>No results match filters</h3>
+          <p style={{ fontSize: "14px", color: "#616161", margin: 0 }}>Try clearing your active search keyword.</p>
         </div>
       ) : (
         filtered.map((cat) => (
-          <div key={cat.category} style={{ marginBottom: "36px" }}>
-            {/* Group Header */}
-            <div
-              style={{
-                display: "flex",
-                alignItems: "center",
-                gap: "12px",
-                marginBottom: "16px",
-                padding: "4px 0",
-              }}
-            >
-              <span style={{ fontSize: "24px", display: "inline-flex" }}>{cat.icon}</span>
-              <h2 style={{ fontWeight: "700", fontSize: "17px", color: "#0f172a", margin: 0, letterSpacing: "-0.02em" }}>
-                {cat.category}
-              </h2>
-              <span
-                style={{
-                  background: "#f1f5f9",
-                  color: "#475569",
-                  fontSize: "12px",
-                  fontWeight: "600",
-                  padding: "3px 10px",
-                  borderRadius: "20px",
-                }}
-              >
-                {cat.items.length}
-              </span>
+          <div key={cat.category} style={{ marginBottom: "20px" }}>
+            <div style={{ padding: "4px 4px 8px 4px", fontSize: "14px", fontWeight: "500", color: "#0061a4", letterSpacing: "0.1px" }}>
+              {cat.category.toUpperCase()}
             </div>
 
-            {/* Accordion Stack */}
-            <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
+            <div style={{ background: "#fff", borderRadius: "16px", overflow: "hidden", border: "1px solid #e0e0e0" }}>
               {cat.items.map((item, idx) => {
                 const key = `${cat.category}-${idx}`;
                 const isOpen = !!openItems[key];
-                const accentColor = cat.badgeColor || "#0ea5e9";
-                const subtleBg = cat.bgColor || "#f0f9ff";
-
+                
                 return (
-                  <div
-                    key={key}
-                    style={{
-                      border: "1px solid",
-                      borderColor: isOpen ? accentColor : "#e2e8f0",
-                      borderRadius: "14px",
-                      overflow: "hidden",
-                      transition: "all 0.2s cubic-bezier(0.4, 0, 0.2, 1)",
-                      background: "#ffffff",
-                      boxShadow: isOpen ? "0 10px 25px -5px rgba(0,0,0,0.03), 0 8px 10px -6px rgba(0,0,0,0.03)" : "none",
-                    }}
-                  >
+                  <div key={key} style={{ borderBottom: idx !== cat.items.length - 1 ? "1px solid #f0f0f0" : "none" }}>
                     <button
                       onClick={() => toggle(key)}
                       style={{
@@ -483,62 +402,28 @@ export default function FaqSection() {
                         display: "flex",
                         justifyContent: "space-between",
                         alignItems: "center",
-                        gap: "20px",
-                        padding: "20px 24px",
-                        background: "none",
+                        gap: "16px",
+                        padding: "16px",
+                        background: "transparent",
                         border: "none",
                         cursor: "pointer",
                         textAlign: "left",
-                        fontFamily: modernFontStack,
+                        fontFamily: androidFontStack
                       }}
                     >
-                      <span
-                        style={{
-                          fontSize: "15px",
-                          fontWeight: "600",
-                          color: isOpen ? "#0f172a" : "#334155",
-                          lineHeight: "1.5",
-                          flex: 1,
-                          letterSpacing: "-0.01em",
-                        }}
-                      >
+                      <span style={{ fontSize: "15px", fontWeight: "400", color: "#1f1f1f", lineHeight: "1.4", flex: 1 }}>
                         {item.q}
                       </span>
-                      <span
-                        style={{
-                          color: accentColor,
-                          fontSize: "22px",
-                          fontWeight: "300",
-                          flexShrink: 0,
-                          lineHeight: 1,
-                          transition: "transform 0.25s cubic-bezier(0.4, 0, 0.2, 1)",
-                          transform: isOpen ? "rotate(45deg)" : "rotate(0deg)",
-                        }}
-                      >
-                        ＋
+                      <span style={{ color: "#444746", fontSize: "14px", userSelect: "none", transform: isOpen ? "rotate(180deg)" : "rotate(0deg)", transition: "transform 0.2s" }}>
+                        ▼
                       </span>
                     </button>
                     
                     {isOpen && (
-                      <div
-                        style={{
-                          padding: "0 24px 20px 24px",
-                          background: `linear-gradient(180deg, #ffffff 0%, ${subtleBg} 100%)`,
-                        }}
-                      >
-                        <p
-                          style={{
-                            margin: 0,
-                            paddingTop: "14px",
-                            borderTop: "1px dashed #e2e8f0",
-                            fontSize: "14.5px",
-                            color: "#475569",
-                            lineHeight: "1.7",
-                            letterSpacing: "0.005em",
-                          }}
-                        >
+                      <div style={{ padding: "0 16px 16px 16px", backgroundColor: "#f8f9fa" }}>
+                        <div style={{ fontSize: "14.5px", color: "#444746", lineHeight: "1.5", wordBreak: "break-word" }}>
                           {item.a}
-                        </p>
+                        </div>
                       </div>
                     )}
                   </div>
@@ -549,79 +434,30 @@ export default function FaqSection() {
         ))
       )}
 
-      {/* Help Desk Footer Banner */}
-      <div
-        style={{
-          marginTop: "48px",
-          padding: "28px",
-          borderRadius: "20px",
-          background: "#f8fafc",
-          border: "1px solid #e2e8f0",
-          display: "flex",
-          flexDirection: "row",
-          flexWrap: "wrap",
-          gap: "24px",
-          alignItems: "center",
-          justifyContent: "space-between",
-        }}
-      >
-        <div style={{ flex: "1 1 300px" }}>
-          <h4 style={{ margin: "0 0 6px 0", fontSize: "15px", fontWeight: "700", color: "#0f172a", letterSpacing: "-0.01em" }}>
-            Still looking for answers?
-          </h4>
-          <p style={{ margin: 0, fontSize: "13.5px", color: "#64748b", lineHeight: "1.5" }}>
-            Get in touch with our help desk · Morning 9AM–2PM & Evening 4PM–8PM
-          </p>
-        </div>
+      {/* Action Footer */}
+      <div style={{ marginTop: "24px", padding: "20px", borderRadius: "16px", background: "#fff", border: "1px solid #e0e0e0" }}>
+        <h4 style={{ margin: "0 0 6px 0", fontSize: "16px", fontWeight: "500", color: "#1f1f1f" }}>
+          Need Instant Medical Help?
+        </h4>
+        <p style={{ margin: "0 0 16px 0", fontSize: "14px", color: "#616161", lineHeight: "1.4" }}>
+          Direct dial hotlines are open 24 hours for emergency ambulance coordination.
+        </p>
         
-        <div style={{ display: "flex", gap: "12px", flexWrap: "wrap" }}>
-          <a
-            href="tel:01444050241"
-            style={{
-              padding: "12px 20px",
-              borderRadius: "12px",
-              background: "#0ea5e9",
-              color: "#ffffff",
-              fontSize: "13.5px",
-              fontWeight: "600",
-              textDecoration: "none",
-              display: "inline-flex",
-              alignItems: "center",
-              gap: "8px",
-              boxShadow: "0 4px 14px rgba(14, 165, 233, 0.3)",
-              transition: "transform 0.15s ease",
-            }}
-          >
-            <span>📞</span> Call Now
+        <div style={{ display: "flex", gap: "8px" }}>
+          <a href="tel:9587298975" style={{ flex: 1, padding: "12px", borderRadius: "24px", background: "#b3261e", color: "#ffffff", fontSize: "14px", fontWeight: "500", textDecoration: "none", textAlign: "center" }}>
+            🚨 Emergency Call
           </a>
-          <a
-            href="https://maps.app.goo.gl/zdWATTcSH9LW4spk8"
-            target="_blank"
-            rel="noreferrer"
-            style={{
-              padding: "11px 20px",
-              borderRadius: "12px",
-              background: "#ffffff",
-              color: "#0ea5e9",
-              fontSize: "13.5px",
-              fontWeight: "600",
-              textDecoration: "none",
-              border: "1.5px solid #e2e8f0",
-              display: "inline-flex",
-              alignItems: "center",
-              gap: "8px",
-              transition: "background 0.15s ease",
-            }}
-          >
-            <span>📍</span> Directions
+          <a href="https://maps.app.goo.gl/zdWATTcSH9LW4spk8" target="_blank" rel="noreferrer" style={{ flex: 1, padding: "12px", borderRadius: "24px", background: "#fff", color: "#0061a4", fontSize: "14px", fontWeight: "500", textDecoration: "none", border: "1px solid #79747e", textAlign: "center" }}>
+            📍 Navigation
           </a>
         </div>
       </div>
 
-      {/* Bottom Medical Warning Footer */}
-      <p style={{ textAlign: "center", fontSize: "11.5px", color: "#94a3b8", marginTop: "24px", lineHeight: "1.6", letterSpacing: "0.01em" }}>
-        ⚠️ <strong style={{ color: "#64748b" }}>NOT FOR MEDICO LEGAL PURPOSES</strong> · Prescription validity: 10 days · Emergency Helpline: <span style={{ color: "#ef4444", fontWeight: "600" }}>9587298975</span>
-      </p>
+      <div style={{ padding: "24px 16px", textAlign: "center", fontSize: "12px", color: "#9e9e9e", lineHeight: "1.5" }}>
+        NOT FOR MEDICO LEGAL PURPOSES • Prescription Validity: 10 Days
+        <br />
+        Asad Hospital, Kailash Colony, Alwar (Rajasthan)
+      </div>
     </div>
   );
 }
