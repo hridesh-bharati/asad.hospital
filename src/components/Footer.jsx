@@ -66,8 +66,8 @@ const Footer = () => {
             </p>
             
             <p className="text-light text-center w-100 mb-0">
-            <a href="https://github.com/hridesh-bharati">
-              Developed by: Hridesh Bharati
+            <a href="https://integrateddigitalmedia.com">
+              DESIGNED & DEVELOPED BY IDBS
             </a>
             </p>
           </div>
