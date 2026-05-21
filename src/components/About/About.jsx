@@ -353,18 +353,6 @@ export default function AsadHospitalWebsite() {
         </div>
       </section>
 
-      {/* Floating Tactical Access Controllers */}
-      <a
-        href="https://wa.me/919587298975"
-        className="position-fixed bg-success text-white d-flex align-items-center justify-content-center rounded-circle shadow-lg text-decoration-none"
-        style={{ bottom: '25px', right: '25px', width: '55px', height: '55px', zIndex: '9999' }}
-        target="_blank"
-        rel="noopener noreferrer"
-        title="Chat on WhatsApp"
-      >
-        <i className="fab fa-whatsapp fs-2"></i>
-      </a>
-
     </div>
   );
 }

@@ -406,8 +406,6 @@ const Home = () => {
         </div>
       </section>
 
-      {/* FAQ */}
-      <FaqSection />
     </>
   );
 };
