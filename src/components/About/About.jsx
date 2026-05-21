@@ -104,7 +104,7 @@ export default function AsadHospitalWebsite() {
               <div className="p-0 p-lg-2 bg-white border rounded-4 shadow-sm position-relative premium-service-card">
                 <div className="w-100 overflow-hidden rounded-3 position-relative" style={{ minHeight: '360px', maxHeight: '480px' }}>
                   <img
-                    src="/images/rooms/gallery1.jpeg"
+                    src="/images/rooms/room16.jpeg"
                     alt="Asad Hospital Clinical Excellence"
                     className="w-100 h-100 object-fit-cover position-absolute top-0 start-0"
                     style={{ objectPosition: 'center' }}

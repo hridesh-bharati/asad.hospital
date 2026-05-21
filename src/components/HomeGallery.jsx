@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 
 const photos = [
-  { id: 1, src: 'images/rooms/gallery1.jpeg', title: 'हॉस्पिटल मुख्य द्वार (Main Entrance)', desc: 'असद हॉस्पिटल एवं ट्रामा सेंटर का मुख्य प्रवेश द्वार।' },
-  { id: 2, src: 'images/rooms/gallery2.jpeg', title: 'ऑपरेशन थियेटर (Operation Theater)', desc: 'अत्याधुनिक उपकरणों से सुसज्जित नो-एंट्री ओटी जोन।' },
-  { id: 3, src: 'images/rooms/gallery3.jpeg', title: 'इमरजेंसी एवं आईसीयू वार्ड (ICU Ward)', desc: 'मरीज की देखभाल के लिए 24/7 तैयार Medical Setup।' },
-  { id: 4, src: 'images/rooms/gallery4.jpeg', title: 'रिसेप्शन एवं पूछताछ (Reception Desk)', desc: 'मरीजों और उनके परिजनों की सहायता के लिए मुख्य काउंटर।' },
-  { id: 5, src: 'images/rooms/gallery5.jpeg', title: 'सामान्य वार्ड / रिकवरी रूम (General Ward)', desc: 'हवादार और साफ-सुथरा मरीजों का रिकवरी एरिया।' },
+  { id: 1, src: 'images/rooms/room16.jpeg', title: 'हॉस्पिटल मुख्य द्वार (Main Entrance)', desc: 'असद हॉस्पिटल एवं ट्रामा सेंटर का मुख्य प्रवेश द्वार।' },
+  { id: 2, src: 'images/rooms/room18.jpeg', title: 'ऑपरेशन थियेटर (Operation Theater)', desc: 'अत्याधुनिक उपकरणों से सुसज्जित नो-एंट्री ओटी जोन।' },
+  { id: 3, src: 'images/rooms/room22.jpeg', title: 'इमरजेंसी एवं आईसीयू वार्ड (ICU Ward)', desc: 'मरीज की देखभाल के लिए 24/7 तैयार Medical Setup।' },
+  { id: 4, src: 'images/rooms/room2.jpeg', title: 'रिसेप्शन एवं पूछताछ (Reception Desk)', desc: 'मरीजों और उनके परिजनों की सहायता के लिए मुख्य काउंटर।' },
+  { id: 5, src: 'images/rooms/room1.jpeg', title: 'सामान्य वार्ड / रिकवरी रूम (General Ward)', desc: 'हवादार और साफ-सुथरा मरीजों का रिकवरी एरिया।' },
   { id: 6, src: 'images/rooms/room9.jpeg', title: 'असद रिसेप्शन काउंटर (Front Desk)', desc: 'सुविधाजनक और त्वरित रजिस्ट्रेशन प्रक्रिया केंद्र।' },
 ];
 

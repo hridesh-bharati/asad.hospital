@@ -9,7 +9,7 @@ const photos = [
   },
   { 
     id: 2, 
-    src: 'images/rooms/room2.jpeg', 
+    src: 'images/rooms/room16.jpeg', 
     title: 'मुख्य रिसेप्शन काउंटर (Main Reception Desk)', 
     desc: 'मरीजों के रजिस्ट्रेशन और पूछताछ के लिए अस्पताल का फ्रंट काउंटर।' 
   },
@@ -63,7 +63,7 @@ const photos = [
   },
   { 
     id: 11, 
-    src: 'images/rooms/room11.jpeg', 
+    src: 'images/rooms/room11.jpg', 
     title: 'प्रतीक्षा क्षेत्र एवं सीढ़ियां (Waiting Lounge & Stairs)', 
     desc: 'मरीजों के परिजनों के बैठने के लिए कुर्सियां और ऊपरी मंजिल पर जाने का रास्ता।' 
   },
@@ -92,43 +92,37 @@ const photos = [
     desc: 'असद हॉस्पिटल एवं ट्रामा सेंटर का फ्रंट बोर्ड और मुख्य प्रवेश मार्ग।' 
   },
   { 
-    id: 16, 
-    src: 'images/rooms/room16.jpg', 
-    title: 'फार्मेसी / दवा वितरण केंद्र (24/7 Pharmacy)', 
-    desc: 'मरीजों को चौबीसों घंटे दवाइयां उपलब्ध कराने वाला मुख्य मेडिकल स्टोर काउंटर।' 
-  },
-  { 
     id: 17, 
     src: 'images/rooms/room17.jpg', 
     title: 'पूछताछ एवं हेल्प डेस्क (Information Desk)', 
     desc: 'परिजनों की सहायता और अस्पताल से जुड़ी जानकारी के लिए रिसेप्शन विंग।' 
   },
   { 
-    id: 18, 
+    id: 17, 
     src: 'images/rooms/room18.jpeg', 
     title: 'ओटी सुरक्षित क्षेत्र (OT Area - No Entry)', 
     desc: 'संक्रमण मुक्त (Sterilized) रखने के लिए विशेष रूप से डिज़ाइन किया गया ओटी का मुख्य गेट।' 
   },
   { 
-    id: 19, 
+    id: 18, 
     src: 'images/rooms/room19.jpeg', 
     title: 'इमरजेंसी और ट्रॉमा बेड (Emergency Trauma Bed)', 
     desc: 'गंभीर स्थिति में आने वाले मरीजों को तुरंत प्राथमिक उपचार देने का सेटअप।' 
   },
   { 
-    id: 20, 
+    id: 19, 
     src: 'images/rooms/room20.jpeg', 
     title: 'ट्रॉमा सेंटर फ्रंट व्यू (Trauma Center Front)', 
     desc: 'आपातकालीन और एक्सीडेंटल केस के लिए बना मुख्य ट्रॉमा सेंटर बोर्ड।' 
   },
   { 
-    id: 21, 
+    id: 20, 
     src: 'images/rooms/room21.jpeg', 
     title: 'आईस्यू / क्रिटिकल केयर यूनिट (Critical Care Unit)', 
     desc: 'मल्टी-पैरा मॉनिटर और जीवन रक्षक प्रणालियों से लैस विशेष निगरानी कक्ष।' 
   },
   { 
-    id: 22, 
+    id: 21, 
     src: 'images/rooms/room22.jpeg', 
     title: 'इमरजेंसी आईसीयू वार्ड (Intensive Care Unit - ICU)', 
     desc: 'गंभीर मरीजों की 24/7 कस्टमाइज्ड और गहन देखभाल के लिए अत्याधुनिक आईसीयू सेटअप।' 

@@ -4,91 +4,71 @@ const Footer = () => {
   return (
     <>
       <footer className="footer" style={{ background: '#010122' }}>
-        <div className="container">
+        <div className="container-fluid">
           <div className="row g-4">
-            <div className="col-lg-4 col-md-6">
+            
+            {/* हॉस्पिटल परिचय */}
+            <div className="col-lg-4 col-md-12 col-12">
               <div className="d-flex align-items-center mb-3">
                 <div className="footer-logo me-2">
                   <i className="fas fa-hospital-user fs-2 text-gradient"></i>
                 </div>
                 <h4 className="fw-bold text-white mb-0">Asad<span className="text-gradient">Hospital</span></h4>
               </div>
-              <p>
+              <p style={{ fontSize: '13px' }}>
                 24×7 Multispeciality & Emergency Hospital in Alwar.
               </p>
-
-              <p className="mt-3">
-                <i className="fas fa-phone-alt text-danger"></i>
+              <p className="mt-3" style={{ fontSize: '14px' }}>
+                <i className="fas fa-phone-alt text-danger me-1"></i>
                 +91 9587298975 | +91 7976573436
               </p>
             </div>
 
-            <div className="col-lg-3 col-md-6">
-              <h5>Medical Specialties</h5>
-
-              <ul className="footer-links p-0">
-                <li>
-                  <a href="#services">General Surgery</a>
-                </li>
-
-                <li>
-                  <a href="#services">Laparoscopic Surgery</a>
-                </li>
-
-                <li>
-                  <a href="#services">Orthopedics & Fractures</a>
-                </li>
-
-                <li>
-                  <a href="#services">Maternity & Gynecology</a>
-                </li>
-              </ul>
+            {/* मेडिकल स्पेशलिटीज - हेडिंग col-12, ऑप्शंस col-6 + स्मॉल फॉन्ट */}
+            <div className="col-lg-3 col-md-4 col-12">
+              <h5 className="fw-semibold">Medical Specialties</h5>
+              <div className="row footer-links p-0 m-0" style={{ fontSize: '14px' }}>
+                <div className="col-6 p-0 mb-2"><a href="#services">General Surgery</a></div>
+                <div className="col-6 p-0 mb-2"><a href="#services">Laparoscopic Surgery</a></div>
+                <div className="col-6 p-0 mb-2"><a href="#services">Orthopedics & Fractures</a></div>
+                <div className="col-6 p-0 mb-2"><a href="#services">Maternity & Gynecology</a></div>
+              </div>
             </div>
 
-            <div className="col-lg-3 col-md-6">
-              <h5>Government Schemes</h5>
-
-              <ul className="footer-links p-0">
-                <li>
-                  <a href="#schemes">Rajasthan MAA Yojna</a>
-                </li>
-
-                <li>
-                  <a href="#schemes">Ayushman Bharat</a>
-                </li>
-
-                <li>
-                  <a href="#schemes">All TPA Cashless</a>
-                </li>
-              </ul>
+            {/* गवर्नमेंट स्कीम्स - हेडिंग col-12, ऑप्शंस col-6 + स्मॉल फॉन्ट */}
+            <div className="col-lg-3 col-md-4 col-12">
+              <h5 className="fw-semibold">Government Schemes</h5>
+              <div className="row footer-links p-0 m-0" style={{ fontSize: '14px' }}>
+                <div className="col-6 p-0 mb-2"><a href="#schemes">Rajasthan MAA Yojna</a></div>
+                <div className="col-6 p-0 mb-2"><a href="#schemes">Ayushman Bharat</a></div>
+                <div className="col-6 p-0 mb-2"><a href="#schemes">All TPA Cashless</a></div>
+              </div>
             </div>
 
-            <div className="col-lg-2 col-md-6">
-              <h5>Quick Links</h5>
-
-              <ul className="footer-links p-0">
-                <li>
-                  <a href="#about">About Us</a>
-                </li>
-
-                <li>
-                  <a href="#doctors">Doctors</a>
-                </li>
-
-                <li>
-                  <a href="#gallery">Gallery</a>
-                </li>
-
-                <li>
-                  <a href="#contact">Contact</a>
-                </li>
-              </ul>
+            {/* क्विक लिंक्स - हेडिंग col-12, ऑप्शंस col-6 + स्मॉल फॉन्ट */}
+            <div className="col-lg-2 col-md-4 col-12">
+              <h5 className="fw-semibold">Quick Links</h5>
+              <div className="row footer-links p-0 m-0" style={{ fontSize: '14px' }}>
+                <div className="col-6 p-0 mb-2"><a href="#about">About Us</a></div>
+                <div className="col-6 p-0 mb-2"><a href="#doctors">Doctors</a></div>
+                <div className="col-6 p-0 mb-2"><a href="#gallery">Gallery</a></div>
+                <div className="col-6 p-0 mb-2"><a href="#contact">Contact</a></div>
+              </div>
             </div>
+
           </div>
 
-          <div className="text-center pt-4 mt-5 border-top border-secondary">
+          {/* नीचे का कॉपीराइट और डेवलपर नाम (Side by Side + स्मॉल फॉन्ट) */}
+          <div className="d-flex justify-content-center text-center align-items-center pt-4 mt-2 border-top
+           border-secondary text-center w-100 flex-wrap" style={{ fontSize: '13px' }}>
             <p className="mb-0">
               © 2026 Asad Hospital. All Rights Reserved
+            </p>
+            
+            <p className="text-light text-center w-100 mb-0">
+            <a href="https://github.com/hridesh-bharati">
+              Developed by: Hridesh Bharati
+            </a>
             </p>
           </div>
         </div>
@@ -116,7 +96,6 @@ const Footer = () => {
       <a href="#" className="backtop" id="backToTop">
         <i className="fas fa-arrow-up"></i>
       </a>
-
     </>
   );
 };
