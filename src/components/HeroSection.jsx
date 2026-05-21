@@ -1,7 +1,7 @@
 import React from "react";
 import FaqSection from "./FaqSection";
 import { Link } from "react-router-dom";
-// import HomeGallery from "./HomeGallery";
+import HomeGallery from "./HomeGallery";
 
 const doctorsData = [
   {
@@ -372,7 +372,7 @@ const Home = () => {
         </div>
       </section>
 
-      {/* <HomeGallery /> */}
+      <HomeGallery />
 
       {/* GOVERNMENT SCHEMES */}
       <section className="section scheme-section" id="schemes">
