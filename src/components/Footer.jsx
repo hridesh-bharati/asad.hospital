@@ -28,8 +28,8 @@ const Footer = () => {
             <div className="col-lg-3 col-md-4 col-12">
               <h5 className="fw-semibold">Medical Specialties</h5>
               <div className="row footer-links p-0 m-0" style={{ fontSize: '14px' }}>
-                <div className="col-6 p-0 mb-2"><a href="#services">Orthopedics & Fractures</a></div>
                 <div className="col-6 p-0 mb-2"><a href="#services">Maternity & Gynecology</a></div>
+                <div className="col-6 p-0 mb-2"><a href="#services">Orthopedics & Fractures</a></div>
                 <div className="col-6 p-0 mb-2"><a href="#services">General Surgery</a></div>
                 <div className="col-6 p-0 mb-2"><a href="#services">Laparoscopic Surgery</a></div>
               </div>
