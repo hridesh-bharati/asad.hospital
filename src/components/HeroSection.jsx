@@ -21,6 +21,13 @@ const doctorsData = [
     availability: "24 Hours Available",
   },
   {
+    name: "डॉ. माधवी कुन्दनानी",
+    image: "images/team/team5.png", 
+    specialty: "M.S. ENT",
+    experience: "कान, नाक, गला रोग विशेषज्ञ (ENT Specialist)",
+    availability: "24 Hours Available",
+  },
+  {
     name: "डॉ. कनक अरोड़ा",
     image: "images/team/team3.png",  
     specialty: "M.B.B.S., D.N.B., (Orthopedics)",
@@ -392,7 +399,7 @@ const Home = () => {
             </div>
             <div className="col-md-4">
               <div className="scheme-box"><i className="fas fa-heart-pulse text-danger"></i>
-                <h4 className="text-primary mt-2">Ayushman Bharat</h4>
+                <h4 className="text-primary mt-2">Ayushman Bharat Yojana(for Haryana patients)</h4>
                 <p className="small text-muted mb-0">Eligible cardholders across Haryana & Rajasthan can receive cashless standard admissions seamlessly.</p>
               </div>
             </div>

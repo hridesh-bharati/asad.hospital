@@ -24,11 +24,19 @@ const DOCTORS_DATA = [
     expertise: ["Normal Delivery", "Cesarean Section", "Pregnancy Care", "Women Health"],
   },
   {
+    name: "Dr. Madhavi Kundnani",
+    degrees: "M.S. ENT",
+    specialty: "ENT Specialist (कान, नाक, गला रोग विशेषज्ञ)",
+    specialtyIcon: "👂",
+    image: "images/team/team3.png", // यहाँ अपनी इमेज का पाथ डालें (e.g., "images/team/madhavi.jpeg")
+    expertise: ["Ear Diseases (कान के रोग)", "Nose Problems (नाक की समस्या)", "Throat Infections (गले का संक्रमण)", "Sinus Treatment"],
+  },
+  {
     name: "Dr. Kanakaroda",
     degrees: "M.B.B.S, D.N.B, (Orthopedics)",
     specialty: "Orthopedic Specialist",
     specialtyIcon: "🦴",
-    image: "",
+    image: "images/team/team4.png",
     expertise: ["Bone Fractures", "Joint Pain", "Trauma Injuries", "Orthopedic Problems"],
   },
   {
@@ -36,7 +44,7 @@ const DOCTORS_DATA = [
     degrees: "M.Ch (Urology)",
     specialty: "Urologist",
     specialtyIcon: "💧",
-    image: "",
+    image: "images/team/team5.png",
     expertise: ["Urinary Problems", "Kidney Stone", "Urinary Infection", "Male Disorders"],
   },
 ];

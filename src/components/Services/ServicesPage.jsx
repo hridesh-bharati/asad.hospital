@@ -231,7 +231,7 @@ export default function ServicesPage() {
             {/* IMAGE */}
             <div className="col-lg-6" data-aos="fade-right">
               <img
-                src="images/rooms/gallery1.jpeg"
+                src="images/rooms/room3.jpeg"
                 alt="Hospital Facilities"
                 className="img-fluid rounded-4 shadow"
               />
