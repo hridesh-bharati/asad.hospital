@@ -36,19 +36,19 @@ const Header = () => {
               height={70}
               className="img-fluid object-fit-contain"
               alt="Asad Hospital Logo"
-              style={{ width: "clamp(3.2rem, 2vw, 3rem)" }}
+              style={{ width: "clamp(3.5rem, 2vw, 3rem)" }}
             />
 
             <div className="d-flex flex-column lh-1">
               <span
                 className="fw-bold text-uppercase navbar-brand"
-                style={{ fontSize: "clamp(1rem, 2vw, 1.5rem)" }}
+                style={{ fontSize: "clamp(1.4rem, 2.5vw, 2.5rem)" }}
               >
                 ASAD HOSPITAL
               </span>
               <span
                 className="text-success fw-semibold py-1"
-                style={{ fontSize: "clamp(0.5rem, 1.2vw, 0.7rem)" }}
+                style={{ fontSize: "clamp(0.6rem, 1.2vw, 0.7rem)" }}
               >
                 24x7 Multispeciality & Emergency Care
               </span>
@@ -57,7 +57,7 @@ const Header = () => {
 
 
           <button
-            className="navbar-toggler"
+            className="navbar-toggler p-2"
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#mainNav"
@@ -65,7 +65,7 @@ const Header = () => {
             <span className="navbar-toggler-icon"></span>
           </button>
 
-          <div className="collapse navbar-collapse" id="mainNav">
+          <div className="collapse navbar-collapse " id="mainNav">
             <ul className="navbar-nav ms-auto align-items-lg-center">
               <li className="nav-item">
                 <NavLink className="nav-link" to="/" end>

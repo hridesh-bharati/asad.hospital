@@ -6,7 +6,7 @@ const photos = [
   { id: 3, src: 'images/rooms/room22.jpeg', title: 'इमरजेंसी एवं आईसीयू वार्ड (ICU Ward)', desc: 'मरीज की देखभाल के लिए 24/7 तैयार Medical Setup।' },
   { id: 4, src: 'images/rooms/room2.jpeg', title: 'रिसेप्शन एवं पूछताछ (Reception Desk)', desc: 'मरीजों और उनके परिजनों की सहायता के लिए मुख्य काउंटर।' },
   { id: 5, src: 'images/rooms/room1.jpeg', title: 'सामान्य वार्ड / रिकवरी रूम (General Ward)', desc: 'हवादार और साफ-सुथरा मरीजों का रिकवरी एरिया।' },
-  { id: 6, src: 'images/rooms/room9.jpeg', title: 'रिसेप्शन एवं पूछताछ (Reception Desk)', desc: 'सुविधाजनक और त्वरित रजिस्ट्रेशन प्रक्रिया केंद्र।' },
+  { id: 6, src: 'images/rooms/room2.jpeg', title: 'असद रिसेप्शन काउंटर (Front Desk)', desc: 'सुविधाजनक और त्वरित रजिस्ट्रेशन प्रक्रिया केंद्र।' },
 ];
 
 const PhotoGallery = () => {
