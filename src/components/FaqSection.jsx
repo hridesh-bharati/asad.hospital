@@ -1,12 +1,39 @@
 import { useState, useMemo } from "react";
 
 const faqData = [
+   {
+    category: "Gynaecology & Women's Health",
+    icon: "👩‍⚕️",
+    badgeColor: "#c2185b",
+    bgColor: "#fce4ec",
+    items: [
+      { q: "What gynaecological services are available at Asad Hospital?", a: "Dr. Parveen Khan (MBBS, MS, FMAS) provides comprehensive women's healthcare including antenatal care, normal delivery, C-section, gynaecological surgeries, and treatment of menstrual and hormonal disorders." },
+      { q: "Is Asad Hospital good for pregnancy and delivery?", a: "Yes, Dr. Parveen Khan is an experienced obstetrician with MS qualifications and experience at SMS Hospital Jaipur. She manages normal and complicated pregnancies, deliveries, and post-natal care." },
+      { q: "Does the hospital have a labour room?", a: "Yes, the hospital has a labour room equipped for normal and assisted deliveries, with emergency C-section capability available at all times." },
+      { q: "What is a C-section (Caesarean section) and is it available here?", a: "A C-section is a surgical procedure to deliver a baby through an abdominal incision when vaginal delivery is not safe. Yes, C-sections are performed at Asad Hospital, both planned and emergency." },
+      { q: "What are the signs I should see a gynaecologist?", a: "Consult Dr. Parveen Khan for: irregular or painful periods, white discharge, pelvic pain, pregnancy check-ups, delayed periods, PCOS symptoms, or any reproductive health concern." },
+      { q: "Does the hospital provide antenatal (pregnancy) care?", a: "Yes, regular antenatal check-ups including weight monitoring, BP check, USG referrals, blood tests, and iron supplementation guidance are provided throughout pregnancy." },
+      { q: "Is PCOS (Polycystic Ovary Syndrome) treated at Asad Hospital?", a: "Yes, Dr. Parveen Khan diagnoses and manages PCOS through lifestyle counselling, hormonal treatment, and surgical options like laparoscopic ovarian drilling if required." },
+      { q: "Is laparoscopic gynaecological surgery available?", a: "Yes. Dr. Parveen Khan holds FMAS (Fellow of Minimal Access Surgery), allowing her to perform laparoscopic procedures like diagnostic laparoscopy, ovarian cyst removal, and tubal ligation." },
+      { q: "What is hysterectomy and is it performed here?", a: "Hysterectomy is the surgical removal of the uterus, performed for fibroids, cancer, or severe endometriosis. Both open and laparoscopic hysterectomy can be discussed with Dr. Parveen Khan." },
+      { q: "What are uterine fibroids and can they be treated here?", a: "Fibroids are non-cancerous growths in the uterus causing heavy bleeding and pelvic pain. They are diagnosed via USG and treated medically or surgically at Asad Hospital." },
+      { q: "Is family planning advice available at Asad Hospital?", a: "Yes, Dr. Parveen Khan provides family planning counselling, including contraceptive options, IUD insertion, tubectomy, and vasectomy referrals." },
+      { q: "What is the safest place to deliver a baby in Alwar?", a: "Asad Hospital is a trusted choice for delivery in Alwar with a qualified MS Gynaecologist, dedicated labour room, 24×7 emergency surgery capability, and a caring nursing team." },
+      { q: "Can I get an ultrasound (USG) done at the hospital?", a: "Sonography (USG) referrals are available. The hospital is located near Sahara Sonography, making diagnostic imaging convenient for patients." },
+      { q: "What should I bring for my first gynaecology appointment?", a: "Bring any previous reports (USG, blood tests), your last period date, a list of current medicines, and your insurance card if applicable." },
+      { q: "Are female nurses available during gynaecology consultations?", a: "Yes, female nursing staff are available to assist during gynaecological examinations to ensure patient privacy, comfort, and dignity." },
+      { q: "Is newborn care available after delivery?", a: "Basic newborn care and initial assessment are provided at the hospital. For neonatal ICU requirements, the team will guide you to appropriate facilities." },
+      { q: "What vaccinations are recommended during pregnancy?", a: "Dr. Parveen Khan will advise on vaccines like Td (Tetanus-Diphtheria) and other immunisations as per government maternal health guidelines during antenatal visits." },
+      { q: "Can post-menopausal women consult Dr. Parveen Khan?", a: "Yes, Dr. Parveen Khan also manages post-menopausal health concerns including hormonal changes, bone health, vaginal atrophy, and screening for gynaecological cancers." }
+    ]
+  },
   {
     category: "General Hospital",
     icon: "🏥",
     badgeColor: "#0284c7",
     bgColor: "#f0f9ff",
     items: [
+
       { q: "Is Asad Hospital open 24 hours?", a: "Yes, Asad Hospital operates 24×7. Emergency, trauma, and critical care services are available round the clock every day of the year." },
       { q: "Where is Asad Hospital located?", a: "📍 13, Kailash Colony, near Sahara Sonography, Bhagat Singh Chauraha, Alwar, Rajasthan – 301001. It is centrally located and easy to reach from all parts of Alwar." },
       { q: "What type of hospital is Asad Hospital?", a: "Asad Hospital is a registered multi-speciality private hospital offering care across General Surgery, Gynaecology, Orthopaedics, Urology, ENT, and Chest & Pulmonology under one roof." },
@@ -116,32 +143,7 @@ const faqData = [
       { q: "What post-operative care is provided after surgery?", a: "Post-operative care includes wound dressing, pain management, monitoring of vitals, dietary guidance, and follow-up consultations to ensure smooth recovery." }
     ]
   },
-  {
-    category: "Gynaecology & Women's Health",
-    icon: "👩‍⚕️",
-    badgeColor: "#c2185b",
-    bgColor: "#fce4ec",
-    items: [
-      { q: "What gynaecological services are available at Asad Hospital?", a: "Dr. Parveen Khan (MBBS, MS, FMAS) provides comprehensive women's healthcare including antenatal care, normal delivery, C-section, gynaecological surgeries, and treatment of menstrual and hormonal disorders." },
-      { q: "Is Asad Hospital good for pregnancy and delivery?", a: "Yes, Dr. Parveen Khan is an experienced obstetrician with MS qualifications and experience at SMS Hospital Jaipur. She manages normal and complicated pregnancies, deliveries, and post-natal care." },
-      { q: "Does the hospital have a labour room?", a: "Yes, the hospital has a labour room equipped for normal and assisted deliveries, with emergency C-section capability available at all times." },
-      { q: "What is a C-section (Caesarean section) and is it available here?", a: "A C-section is a surgical procedure to deliver a baby through an abdominal incision when vaginal delivery is not safe. Yes, C-sections are performed at Asad Hospital, both planned and emergency." },
-      { q: "What are the signs I should see a gynaecologist?", a: "Consult Dr. Parveen Khan for: irregular or painful periods, white discharge, pelvic pain, pregnancy check-ups, delayed periods, PCOS symptoms, or any reproductive health concern." },
-      { q: "Does the hospital provide antenatal (pregnancy) care?", a: "Yes, regular antenatal check-ups including weight monitoring, BP check, USG referrals, blood tests, and iron supplementation guidance are provided throughout pregnancy." },
-      { q: "Is PCOS (Polycystic Ovary Syndrome) treated at Asad Hospital?", a: "Yes, Dr. Parveen Khan diagnoses and manages PCOS through lifestyle counselling, hormonal treatment, and surgical options like laparoscopic ovarian drilling if required." },
-      { q: "Is laparoscopic gynaecological surgery available?", a: "Yes. Dr. Parveen Khan holds FMAS (Fellow of Minimal Access Surgery), allowing her to perform laparoscopic procedures like diagnostic laparoscopy, ovarian cyst removal, and tubal ligation." },
-      { q: "What is hysterectomy and is it performed here?", a: "Hysterectomy is the surgical removal of the uterus, performed for fibroids, cancer, or severe endometriosis. Both open and laparoscopic hysterectomy can be discussed with Dr. Parveen Khan." },
-      { q: "What are uterine fibroids and can they be treated here?", a: "Fibroids are non-cancerous growths in the uterus causing heavy bleeding and pelvic pain. They are diagnosed via USG and treated medically or surgically at Asad Hospital." },
-      { q: "Is family planning advice available at Asad Hospital?", a: "Yes, Dr. Parveen Khan provides family planning counselling, including contraceptive options, IUD insertion, tubectomy, and vasectomy referrals." },
-      { q: "What is the safest place to deliver a baby in Alwar?", a: "Asad Hospital is a trusted choice for delivery in Alwar with a qualified MS Gynaecologist, dedicated labour room, 24×7 emergency surgery capability, and a caring nursing team." },
-      { q: "Can I get an ultrasound (USG) done at the hospital?", a: "Sonography (USG) referrals are available. The hospital is located near Sahara Sonography, making diagnostic imaging convenient for patients." },
-      { q: "What should I bring for my first gynaecology appointment?", a: "Bring any previous reports (USG, blood tests), your last period date, a list of current medicines, and your insurance card if applicable." },
-      { q: "Are female nurses available during gynaecology consultations?", a: "Yes, female nursing staff are available to assist during gynaecological examinations to ensure patient privacy, comfort, and dignity." },
-      { q: "Is newborn care available after delivery?", a: "Basic newborn care and initial assessment are provided at the hospital. For neonatal ICU requirements, the team will guide you to appropriate facilities." },
-      { q: "What vaccinations are recommended during pregnancy?", a: "Dr. Parveen Khan will advise on vaccines like Td (Tetanus-Diphtheria) and other immunisations as per government maternal health guidelines during antenatal visits." },
-      { q: "Can post-menopausal women consult Dr. Parveen Khan?", a: "Yes, Dr. Parveen Khan also manages post-menopausal health concerns including hormonal changes, bone health, vaginal atrophy, and screening for gynaecological cancers." }
-    ]
-  },
+ 
   {
     category: "Orthopaedics, Urology & ENT",
     icon: "🦴",

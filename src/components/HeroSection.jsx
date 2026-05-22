@@ -71,7 +71,7 @@ const Home = () => {
 
                   <span className="badge-scheme" data-aos="fade-right" data-aos-delay="300">
                     <i className="fas fa-shield-halved text-primary me-1"></i>
-                    Haryana Ayushman Bharat
+                    Ayushman Bharat Yojana(for Haryana patients)
                   </span>
 
                   <span className="badge-scheme" data-aos="fade-right" data-aos-delay="500">
@@ -311,7 +311,7 @@ const Home = () => {
         <div className="glow-wrapper glow-purple-center-left"></div>
         <div className="glow-wrapper glow-cyan-bottom-right"></div>
 
-        <div className="container position-relative" style={{ zIndex: 2 }}>
+        <div className="container-fluid position-relative" style={{ zIndex: 2 }}>
           <div className="text-center mb-5">
             <h2 className="fw-bold text-uppercase tracking-wider mb-2" style={{ color: '#0b2545', fontSize: '2.2rem' }}>
               Meet Our Specialists
@@ -319,9 +319,9 @@ const Home = () => {
             <div className="mx-auto rounded-pill mb-3" style={{ width: '60px', height: '5px', background: 'linear-gradient(90deg, #007bff, #00d4ff)' }}></div>
           </div>
 
-          <div className="row g-4 justify-content-center">
+          <div className="row g-4 justify-content-center p-0 m-0">
             {doctorsData.map((doctor, index) => (
-              <div className="col-xl-3 col-lg-3 col-md-6" key={index}>
+              <div className="col-xl-2 col-lg-2 col-md-6" key={index}>
                 <div
                   className="card doctor-card h-100 d-flex flex-column justify-content-between border-0 overflow-hidden"
                   style={{
@@ -356,7 +356,7 @@ const Home = () => {
                       <div className="position-absolute bottom-0 start-0 w-100" style={{ height: '30%', background: 'linear-gradient(to top, rgba(0,0,0,0.02), transparent)' }}></div>
                     </div>
 
-                    <div className="doctor-info p-4">
+                    <div className="doctor-info px-2 py-4">
                       <h4 className="fw-bold mb-1" style={{ color: '#0b2545', fontSize: '1.25rem' }}>{doctor.name}</h4>
                       <span className="specialty d-block mb-3 fw-bold text-uppercase tracking-wide" style={{ fontSize: '0.8rem', color: '#007bff' }}>
                         {doctor.specialty}
