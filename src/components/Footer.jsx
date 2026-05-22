@@ -23,8 +23,6 @@ const Footer = () => {
                 +91 9587298975 | +91 7976573436
               </p>
             </div>
-
-            {/* मेडिकल स्पेशलिटीज - हेडिंग col-12, ऑप्शंस col-6 + स्मॉल फॉन्ट */}
             <div className="col-lg-3 col-md-4 col-12">
               <h5 className="fw-semibold">Medical Specialties</h5>
               <div className="row footer-links p-0 m-0" style={{ fontSize: '14px' }}>
