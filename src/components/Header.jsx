@@ -42,7 +42,7 @@ const Header = () => {
             <div className="d-flex flex-column lh-1">
               <span
                 className="fw-bolder navbar-brand"
-                style={{ fontSize: "clamp(1.4rem, 2.5vw, 2.5rem)" }}
+                style={{ fontSize: "clamp(1.5rem, 2.6vw, 2.6rem)" }}
               >
                 ASAD HOSPITAL
               </span>
