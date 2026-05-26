@@ -28,7 +28,7 @@ const Header = () => {
         <div className="container">
           {/* LOGO + TEXT */}
           <Link
-            className="navbar-brand d-flex align-items-center gap-3 m-0"
+            className="navbar-brand d-flex align-items-center gap-2 m-0"
             to="/"
           >
             <img
@@ -41,7 +41,7 @@ const Header = () => {
 
             <div className="d-flex flex-column lh-1">
               <span
-                className="fw-bold text-uppercase navbar-brand"
+                className="fw-bolder navbar-brand"
                 style={{ fontSize: "clamp(1.4rem, 2.5vw, 2.5rem)" }}
               >
                 ASAD HOSPITAL
@@ -50,7 +50,7 @@ const Header = () => {
                 className="text-success fw-semibold py-1"
                 style={{ fontSize: "clamp(0.6rem, 1.2vw, 0.7rem)" }}
               >
-                24x7 Multispeciality & Emergency Care
+                24x7 Trusted Maternity, Gynecology <br /> and Surgical Cate
               </span>
             </div>
           </Link>
