@@ -16,7 +16,7 @@ const Footer = () => {
                 <h4 className="fw-bold text-white mb-0">Asad<span className="text-gradient">Hospital</span></h4>
               </div>
               <p style={{ fontSize: '13px' }}>
-                24×7 Multispeciality & Emergency Hospital in Alwar.
+                24x7 Trusted Maternity, Gynecology  and Surgical Cate
               </p>
               <p className="mt-3" style={{ fontSize: '14px' }}>
                 <i className="fas fa-phone-alt text-danger me-1"></i>
